@@ -2,15 +2,13 @@ import React from 'react';
 
 
 import HeaderComponent from '../components/header';
+import FooterComponent from '../components/footer';
 
 const Home = () => {
     return (
         <div>
 
             <HeaderComponent></HeaderComponent>
-
-
-
 
             <section id="hero" class="d-flex justify-content-center align-items-center">
                 <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
@@ -30,7 +28,7 @@ const Home = () => {
 
                     <div class="row">
                         <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                            <img src="./img/about.jpg" class="img-fluid" alt=""/>
+                            <img src="./img/about.jpg" class="img-fluid" alt="" />
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -53,6 +51,8 @@ const Home = () => {
                 </div>
             </section>
             {/* <!-- End About Section --> */}
+
+            <FooterComponent></FooterComponent>
 
         </div>
     );
