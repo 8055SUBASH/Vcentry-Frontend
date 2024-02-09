@@ -12,9 +12,9 @@ const Home = () => {
 
             <section id="hero" className="d-flex justify-content-center align-items-center">
                 <div className="container position-relative aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-                    <h1>Learning Today,Leading Tomorrow</h1>
-                    <h2>We are team of talented designers making websites with Bootstrap</h2>
-                    <button href="courses.html" className="btn-get-started">Get Started</button>
+                    <h1>Vcentry Technologies</h1>
+                    <h2>Hands On Training Institute</h2>
+                    <button  className="btn-get-started btn btn-outline-primary">Get Started</button>
                 </div>
             </section>
             {/* // <!-- End Hero --> */}
@@ -31,18 +31,16 @@ const Home = () => {
                                 <img src={require("../img/about.jpg")} className="img-fluid" alt="" />
                             </div>
                             <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                                <h3>Vcentry has been established with the objective of offering superior IT training and consulting services.</h3>
                                 <p className="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua.
+                                Vcentry provides an integrated IT training and consulting services, catering to all the human resource and training requirements of a corporate since 2014. Vcentry focuses on providing-
                                 </p>
                                 <ul>
-                                    <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i className="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i className="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                                    <li><i className="bi bi-check-circle"></i> Comprehensive Talent management solutions to the customers.</li>
+                                    <li><i className="bi bi-check-circle"></i>Our talent management pool has always been striving forward to bring the corporate and professionals together to a single point. </li>
                                 </ul>
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                We have always been victorious in what we do, because we know that having the right people in your business is crucial.
                                 </p>
 
                             </div>
@@ -81,135 +79,85 @@ const Home = () => {
                         </div>
 
                     </div>
-                </section>
+                </section><br></br><br></br><br></br>
                 {/* <!-- End Counts Section --> */}
-
-                {/* <!-- ======= Why Us Section ======= --> */}
-                <section id="why-us" className="why-us">
-                    <div className="container">
-
-                        <div className="row">
-                            <div className="col-lg-4 d-flex align-items-stretch">
-                                <div className="content">
-                                    <h3>Why Choose Mentor?</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                        Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-                                    </p>
-                                    <div className="text-center">
-                                        <a href="about.html" className="more-btn">Learn More <i className="bx bx-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-8 d-flex align-items-stretch" >
-                                <div className="icon-boxes d-flex flex-column justify-content-center">
-                                    <div className="row">
-                                        <div className="col-xl-4 d-flex align-items-stretch">
-                                            <div className="icon-box mt-4 mt-xl-0">
-                                                <i className="bx bx-receipt"></i>
-                                                <h4>Corporis voluptates sit</h4>
-                                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 d-flex align-items-stretch">
-                                            <div className="icon-box mt-4 mt-xl-0">
-                                                <i className="bx bx-cube-alt"></i>
-                                                <h4>Ullamco laboris ladore pan</h4>
-                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 d-flex align-items-stretch">
-                                            <div className="icon-box mt-4 mt-xl-0">
-                                                <i className="bx bx-images"></i>
-                                                <h4>Labore consequatur</h4>
-                                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!-- End .content--> */}
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                {/* <!-- End Why Us Section --> */}
 
                 {/* <!-- ======= Features Section ======= --> */}
                 <section id="features" className="features">
+                    <h1><center>Our Syllabus Includes</center></h1><br></br>
                     <div className="container" >
 
                         <div className="row" >
                             <div className="col-lg-3 col-md-4">
                                 <div className="icon-box">
                                     <i className="ri-store-line" style={{color: "#ffbb2c"}}></i>
-                                    <h3><a href="">Lorem Ipsum</a></h3>
+                                    <h3>Lorem Ipsum</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                                 <div className="icon-box">
                                     <i className="ri-bar-chart-box-line" style={{color: "#5578ff"}}></i>
-                                    <h3><a href="">Dolor Sitema</a></h3>
+                                    <h3>Dolor Sitema</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                                 <div className="icon-box">
                                     <i className="ri-calendar-todo-line" style={{color: "#e80368"}}></i>
-                                    <h3><a href="">Sed perspiciatis</a></h3>
+                                    <h3>Sed perspiciatis</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
                                 <div className="icon-box">
                                     <i className="ri-paint-brush-line" style={{color: "#e361ff"}}></i>
-                                    <h3><a href="">Magni Dolores</a></h3>
+                                    <h3>Magni Dolores</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-database-2-line" style={{color: "#47aeff"}}></i>
-                                    <h3><a href="">Nemo Enim</a></h3>
+                                    <h3>Nemo Enim</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-gradienter-line" style={{color: "#ffa76e"}}></i>
-                                    <h3><a href="">Eiusmod Tempor</a></h3>
+                                    <h3>Eiusmod Tempor</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-file-list-3-line" style={{color: "#11dbcf"}}></i>
-                                    <h3><a href="">Midela Teren</a></h3>
+                                    <h3>Midela Teren</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-price-tag-2-line" style={{color: "#4233ff"}}></i>
-                                    <h3><a href="">Pira Neve</a></h3>
+                                    <h3>Pira Neve</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-anchor-line" style={{color: "#b2904f"}}></i>
-                                    <h3><a href="">Dirada Pack</a></h3>
+                                    <h3>Dirada Pack</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-disc-line" style={{color: "#b20969"}}></i>
-                                    <h3><a href="">Moton Ideal</a></h3>
+                                    <h3>Moton Ideal</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-base-station-line" style={{color: "#ff5828"}}></i>
-                                    <h3><a href="">Verdo Park</a></h3>
+                                    <h3>Verdo Park</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
                                     <i className="ri-fingerprint-line" style={{color: "#29cc61"}}></i>
-                                    <h3><a href="">Flavor Nivelanda</a></h3>
+                                    <h3>Flavor Nivelanda</h3>
                                 </div>
                             </div>
                         </div>
@@ -235,79 +183,57 @@ const Home = () => {
                                     <div className="course-content">
                                         <div className="d-flex justify-content-between align-items-center mb-3">
                                             <h4>Web Development</h4>
-                                            <p className="price">$169</p>
                                         </div>
 
-                                        <h3><a href="course-details.html">Website Design</a></h3>
+                                        <h3>Website Design</h3>
                                         <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                                         <div className="trainer d-flex justify-content-between align-items-center">
-                                            <div className="trainer-profile d-flex align-items-center">
-                                                <img src={require("../img/trainers/trainer-1.jpg")} className="img-fluid" alt=""></img>
-                                                <span>Antonio</span>
-                                            </div>
                                             <div className="trainer-rank d-flex align-items-center">
-                                                <i className="bx bx-user"></i>&nbsp;50
-                                                &nbsp;&nbsp;
                                                 <i className="bx bx-heart"></i>&nbsp;65
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {/* <!-- End Course Item--> */}
-
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                                 <div className="course-item">
-                                    <img src={require("../img/course-2.jpg")} className="img-fluid" alt="..."></img>
+                                    <img src={require("../img/course-1.jpg")} className="img-fluid" alt="..."></img>
                                     <div className="course-content">
                                         <div className="d-flex justify-content-between align-items-center mb-3">
-                                            <h4>Marketing</h4>
-                                            <p className="price">$250</p>
+                                            <h4>Web Development</h4>
                                         </div>
 
-                                        <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                                        <h3>Website Design</h3>
                                         <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                                         <div className="trainer d-flex justify-content-between align-items-center">
-                                            <div className="trainer-profile d-flex align-items-center">
-                                                <img src={require("../img/trainers/trainer-2.jpg")} className="img-fluid" alt=""></img>
-                                                <span>Lana</span>
-                                            </div>
                                             <div className="trainer-rank d-flex align-items-center">
-                                                <i className="bx bx-user"></i>&nbsp;35
-                                                &nbsp;&nbsp;
-                                                <i className="bx bx-heart"></i>&nbsp;42
+                                                <i className="bx bx-heart"></i>&nbsp;65
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {/* <!-- End Course Item--> */}
-
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                                 <div className="course-item">
-                                    <img src={require("../img/course-3.jpg")} className="img-fluid" alt="..."></img>
+                                    <img src={require("../img/course-1.jpg")} className="img-fluid" alt="..."></img>
                                     <div className="course-content">
                                         <div className="d-flex justify-content-between align-items-center mb-3">
-                                            <h4>Content</h4>
-                                            <p className="price">$180</p>
+                                            <h4>Web Development</h4>
                                         </div>
 
-                                        <h3><a href="course-details.html">Copywriting</a></h3>
+                                        <h3>Website Design</h3>
                                         <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                                         <div className="trainer d-flex justify-content-between align-items-center">
-                                            <div className="trainer-profile d-flex align-items-center">
-                                                <img src={require("../img/trainers/trainer-3.jpg")} className="img-fluid" alt=""></img>
-                                                <span>Brandon</span>
-                                            </div>
                                             <div className="trainer-rank d-flex align-items-center">
-                                                <i className="bx bx-user"></i>&nbsp;20
-                                                &nbsp;&nbsp;
-                                                <i className="bx bx-heart"></i>&nbsp;85
+                                                <i className="bx bx-heart"></i>&nbsp;65
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
                             {/* <!-- End Course Item--> */}
 
                         </div>
@@ -317,6 +243,7 @@ const Home = () => {
                 {/* <!-- End Popular Courses Section --> */}
 
                 <section id="trainers" className="trainers">
+                <h1><center>Our Tutor's</center></h1><br></br>
                     <div className="container">
 
                         <div className="row">

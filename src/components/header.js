@@ -11,20 +11,20 @@ const HeaderComponent = () => {
           {/* <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
 
-          <nav id="navbar" className="navbar order-last order-lg-0">
+          <nav id="navbar" className="navbar order-last order-lg-0" >
             <ul>
-              <NavLink to="/" className="active">Home</NavLink>
-              <NavLink to="/courses">Courses</NavLink>
-              <NavLink to="/skill">Skill Enhancement</NavLink>
-              <NavLink to="/service">Service</NavLink>
-              <NavLink to="/review">Review</NavLink>
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/" className="header-text" style={{textDecoration :"none"}}>Home</NavLink>
+              <NavLink to="/courses" style={{textDecoration :"none"}}>Courses</NavLink>
+              <NavLink to="/skill" style={{textDecoration :"none"}}>Skill Enhancement</NavLink>
+              <NavLink to="/service" style={{textDecoration :"none"}}>Service</NavLink>
+              <NavLink to="/review" style={{textDecoration :"none"}}>Review</NavLink>
+              <NavLink to="/contact" style={{textDecoration :"none"}}>Contact Us</NavLink>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
           {/* <!-- .navbar --> */}
 
-          <button href="courses.html" className="get-started-btn">Get Started</button>
+          <button href="courses.html" className="get-started-btn btn btn-outline-light">Get Started</button>
 
         </div>
       </header>
