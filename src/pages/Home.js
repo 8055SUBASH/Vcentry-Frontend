@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="container position-relative aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                     <h1>Learning Today,Leading Tomorrow</h1>
                     <h2>We are team of talented designers making websites with Bootstrap</h2>
-                    <a href="courses.html" className="btn-get-started">Get Started</a>
+                    <button href="courses.html" className="btn-get-started">Get Started</button>
                 </div>
             </section>
             {/* // <!-- End Hero --> */}
@@ -27,8 +27,8 @@ const Home = () => {
                     <div className="container aos-init aos-animate" data-aos="fade-up">
 
                         <div className="row">
-                            <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                                <img src="./img/about.jpg" className="img-fluid" alt="" />
+                            <div className="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                                <img src={require("../img/about.jpg")} className="img-fluid" alt="" />
                             </div>
                             <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                                 <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -59,22 +59,22 @@ const Home = () => {
                         <div className="row counters">
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" className="purecounter"></span>
+                                <span  className="purecounter">1232</span>
                                 <p>Students</p>
                             </div>
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" className="purecounter"></span>
+                                <span  className="purecounter">64</span>
                                 <p>Courses</p>
                             </div>
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" className="purecounter"></span>
+                                <span className="purecounter">42</span>
                                 <p>Events</p>
                             </div>
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" className="purecounter"></span>
+                                <span className="purecounter">15</span>
                                 <p>Trainers</p>
                             </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
 
                 {/* <!-- ======= Why Us Section ======= --> */}
                 <section id="why-us" className="why-us">
-                    <div className="container" data-aos="fade-up">
+                    <div className="container">
 
                         <div className="row">
                             <div className="col-lg-4 d-flex align-items-stretch">
@@ -101,7 +101,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div className="col-lg-8 d-flex align-items-stretch" >
                                 <div className="icon-boxes d-flex flex-column justify-content-center">
                                     <div className="row">
                                         <div className="col-xl-4 d-flex align-items-stretch">
@@ -137,9 +137,9 @@ const Home = () => {
 
                 {/* <!-- ======= Features Section ======= --> */}
                 <section id="features" className="features">
-                    <div className="container" data-aos="fade-up">
+                    <div className="container" >
 
-                        <div className="row" data-aos="zoom-in" data-aos-delay="100">
+                        <div className="row" >
                             <div className="col-lg-3 col-md-4">
                                 <div className="icon-box">
                                     <i className="ri-store-line" style={{color: "#ffbb2c"}}></i>
@@ -220,14 +220,14 @@ const Home = () => {
 
                 {/* <!-- ======= Popular Courses Section ======= --> */}
                 <section id="popular-courses" className="courses">
-                    <div className="container" data-aos="fade-up">
+                    <div className="container" >
 
                         <div className="section-title">
                             <h2>Courses</h2>
                             <p>Popular Courses</p>
                         </div>
 
-                        <div className="row" data-aos="zoom-in" data-aos-delay="100">
+                        <div className="row">
 
                             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                                 <div className="course-item">
@@ -317,9 +317,9 @@ const Home = () => {
                 {/* <!-- End Popular Courses Section --> */}
 
                 <section id="trainers" className="trainers">
-                    <div className="container" data-aos="fade-up">
+                    <div className="container">
 
-                        <div className="row" data-aos="zoom-in" data-aos-delay="100">
+                        <div className="row">
                             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                                 <div className="member">
                                     <img src={require("../img/trainers/trainer-1.jpg")} className="img-fluid" alt=""></img>

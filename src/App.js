@@ -10,6 +10,7 @@ import SkillEnhancement from './pages/Skill- Enhancement';
 import Service from './pages/Service'; 
 
 import "./css/style.css";
+import "./css/custom.css";
 
 import "./vendor/animate.css/animate.min.css";
 import "./vendor/aos/aos.css";
