@@ -16,7 +16,7 @@ const Review = () => {
 
                     <div class="container">
                         <h2>Review</h2>
-                        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+                        <p>Voices of Satisfaction: What Our Users Are Saying. </p>
                     </div>
                 </div>
                 {/* <!-- End Breadcrumbs --> */}
@@ -61,6 +61,7 @@ const Review = () => {
                                         </div>
 
                                         <div class="form-group mt-3">
+                                            <label>Enter Message  :</label>
                                             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                                         </div>
 

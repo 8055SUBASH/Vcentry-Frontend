@@ -15,7 +15,7 @@ const Contact = () => {
                 <div class="breadcrumbs aos-init aos-animate" >
                     <div class="container">
                         <h2>Contact Us</h2>
-                        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+                        <p>Get in Touch: Connect with Vcentry Technology for Inquiries and Assistance.</p>
                     </div>
                 </div><br></br>
 
@@ -82,7 +82,7 @@ const Contact = () => {
 
                 </section>
                 <div >
-                    <iframe style={{ border: 0, width: "100%", height: "350px" }} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31098.602336953376!2d80.204074116333!3d13.014945247817298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f033b9b33f%3A0x3223d8a79e8a981f!2sVCENTRY!5e0!3m2!1sen!2sin!4v1707564318311!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 {/* <!-- End Contact Section --> */}
             </main><br></br>
