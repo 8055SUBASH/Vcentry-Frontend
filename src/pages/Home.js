@@ -58,23 +58,23 @@ const Home = () => {
                         <div className="row counters">
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span  className="purecounter">1232</span>
-                                <p>Students</p>
+                                <span  className="purecounter">15+</span>
+                                <p>Years of Experience</p>
                             </div>
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span  className="purecounter">64</span>
-                                <p>Courses</p>
+                                <span  className="purecounter">10k+</span>
+                                <p>Students Enrolled</p>
                             </div>
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span className="purecounter">42</span>
-                                <p>Events</p>
+                                <span className="purecounter">5k+</span>
+                                <p>Students Placed</p>
                             </div>
 
                             <div className="col-lg-3 col-6 text-center">
-                                <span className="purecounter">15</span>
-                                <p>Trainers</p>
+                                <span className="purecounter">150+</span>
+                                <p>Real Time Projects</p>
                             </div>
 
                         </div>
