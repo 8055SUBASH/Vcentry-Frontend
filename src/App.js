@@ -2,12 +2,23 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
+// pages
+
 import Home from './pages/Home';
 import Courses from './pages/Courses';
 import Contact from './pages/Contact';
 import Review from './pages/Review';
 import SkillEnhancement from './pages/Skill- Enhancement';
 import Service from './pages/Service'; 
+
+// Admin-Pages
+
+import AdminLogin from './pages/Login';
+import CoursesDetail from './pages/Courses-Detail';
+
+
+
+// css
 
 import "./css/style.css";
 import "./css/custom.css";
@@ -32,6 +43,11 @@ const App = () => {
         <Route path="skill" element={<SkillEnhancement></SkillEnhancement>}></Route>
         <Route path="review" element={<Review></Review>}></Route>
         <Route path="service" element={<Service></Service>}></Route>
+
+
+
+        <Route path="admin" element={<AdminLogin></AdminLogin>}></Route>
+        <Route path="details" element={<CoursesDetail></CoursesDetail>}></Route>
         
         </Routes>
         </BrowserRouter>

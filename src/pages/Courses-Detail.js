@@ -3,7 +3,8 @@ import React from 'react';
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 
-const Review = () => {
+
+const CoursesDetail = () => {
     return (
         <div>
             <HeaderComponent></HeaderComponent>
@@ -15,14 +16,13 @@ const Review = () => {
                 <div class="breadcrumbs aos-init aos-animate" data-aos="fade-in">
 
                     <div class="container">
-                        <h2>Review</h2>
-                        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+                        <h2>Courses Detail Page</h2>
                     </div>
                 </div>
                 {/* <!-- End Breadcrumbs --> */}
 
+                {/* <!-- =======   ======= --> */}
 
-                {/* <!-- ======= Review  ======= --> */}
                 <section id="contact" class="contact">
                     <div className="container">
 
@@ -34,35 +34,39 @@ const Review = () => {
                                 <div class="col-lg-8 mt-5 mt-lg-0">
 
                                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-
-                                        <div class="row">
+                                        <div class="row ">
                                             <div class="form-group mt-3">
-                                                <label>Enter  Name  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" Name" required></input>
+                                                <label>Enter Course Filed :</label>
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter Course Filed" required></input>
                                             </div>
 
                                         </div>
 
                                         <div class="row">
                                             <div class="form-group mt-3">
-                                                <label>Enter E-mail Id  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" E-mail Id" required></input>
+                                                <label>Enter Course Name :</label>
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter Course Name" required></input>
                                             </div>
 
                                         </div>
-
 
                                         <div class="row">
                                             <div class="form-group mt-3">
-                                                <label>Enter Course Name  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" Courses Name" required></input>
+                                                <label>Enter Course Detail :</label>
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter Course Detail" required></input>
                                             </div>
 
                                         </div>
 
-                                        <div class="form-group mt-3">
-                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                        <div class="row">
+                                            <div class="form-group mt-3">
+                                                <label>Enter Course Image :</label>
+                                                <input type="file" class="form-control" id="name" placeholder="Enter Course ImageS" required></input>
+                                            </div>
+
                                         </div>
+
+
 
 
                                         <div class="my-3">
@@ -70,7 +74,7 @@ const Review = () => {
                                             <div class="error-message"></div>
                                             <div class="sent-message">Your message has been sent. Thank you!</div>
                                         </div>
-                                        <div class="text-center"><button type="submit">Send</button></div>
+                                        <div class="text-center"><button type="submit">Send Message</button></div>
 
                                     </form>
 
@@ -81,12 +85,10 @@ const Review = () => {
 
                     </div>
                 </section>
-                {/* <!-- Review --> */}
 
-
+                {/* <!-- login --> */}
             </main>
             {/* <!-- End #main --> */}
-
 
 
             <FooterComponent></FooterComponent>
@@ -94,4 +96,4 @@ const Review = () => {
     );
 };
 
-export default Review;
+export default CoursesDetail;
