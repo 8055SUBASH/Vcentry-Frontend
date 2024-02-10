@@ -21,6 +21,7 @@ import "./vendor/remixicon/remixicon.css";
 import "./vendor/swiper/swiper-bundle.min.css";
 
 
+
 const App = () => {
   return (
     <div>
