@@ -3,6 +3,7 @@ import React from 'react';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
+import CourseComponent from '../components/course-component';
 
 const Home = () => {
     return (
@@ -82,7 +83,7 @@ const Home = () => {
                 </section><br></br><br></br><br></br>
                 {/* <!-- End Counts Section --> */}
 
-                {/* <!-- ======= Features Section ======= --> */}
+                {/* <!-- ======= Course Includes Section ======= --> */}
                 <section id="features" className="features">
                     <h1><center>Our Syllabus Includes</center></h1><br></br>
                     <div className="container" >
@@ -90,81 +91,81 @@ const Home = () => {
                         <div className="row" >
                             <div className="col-lg-3 col-md-4">
                                 <div className="icon-box">
-                                    <i className="ri-store-line" style={{color: "#ffbb2c"}}></i>
-                                    <h3>Lorem Ipsum</h3>
+                                    <i class="fa-brands fa-java" style={{color: "#ff3d3d"}}></i>
+                                    <h3>Java Programming</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                                 <div className="icon-box">
-                                    <i className="ri-bar-chart-box-line" style={{color: "#5578ff"}}></i>
-                                    <h3>Dolor Sitema</h3>
+                                <i class="fa-brands fa-js" style={{color: "#FFD43B"}}></i>
+                                    <h3>Javascript</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                                 <div className="icon-box">
-                                    <i className="ri-calendar-todo-line" style={{color: "#e80368"}}></i>
-                                    <h3>Sed perspiciatis</h3>
+                                <i class="fa-brands fa-python" style={{color: "#74C0FC"}}></i>
+                                    <h3>Python Programming</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
                                 <div className="icon-box">
-                                    <i className="ri-paint-brush-line" style={{color: "#e361ff"}}></i>
-                                    <h3>Magni Dolores</h3>
+                                <i class="fa-brands fa-react" style={{color: "#B197FC"}}></i>
+                                    <h3>React JS</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-database-2-line" style={{color: "#47aeff"}}></i>
-                                    <h3>Nemo Enim</h3>
+                                <i class="fa-brands fa-angular" style={{color: "#a22ce2"}}></i>
+                                    <h3>Angular JS</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-gradienter-line" style={{color: "#ffa76e"}}></i>
-                                    <h3>Eiusmod Tempor</h3>
+                                <i class="fa-solid fa-microscope" style={{color: "#da1b1b"}}></i>
+                                    <h3>Software Testing</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-file-list-3-line" style={{color: "#11dbcf"}}></i>
-                                    <h3>Midela Teren</h3>
+                                <i class="fa-solid fa-cloud" style={{color: "#2ba9e9"}}></i>
+                                    <h3>Cloud Technology</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-price-tag-2-line" style={{color: "#4233ff"}}></i>
-                                    <h3>Pira Neve</h3>
+                                <i class="fa-solid fa-magnifying-glass-chart" style={{color: "#cf20c1"}}></i>
+                                    <h3>Data Analyst</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-anchor-line" style={{color: "#b2904f"}}></i>
-                                    <h3>Dirada Pack</h3>
+                                <i class="fa-solid fa-flask" style={{color: "#9d4a06"}}></i>
+                                    <h3>Data Science</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-disc-line" style={{color: "#b20969"}}></i>
-                                    <h3>Moton Ideal</h3>
+                                <i class="fa-solid fa-infinity" style={{color: "#ff4d00"}}></i>
+                                    <h3>Devops</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-base-station-line" style={{color: "#ff5828"}}></i>
-                                    <h3>Verdo Park</h3>
+                                    <i class="fa-solid fa-database" style={{color: "#59e010"}}></i>
+                                    <h3>SQL Database</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i className="ri-fingerprint-line" style={{color: "#29cc61"}}></i>
-                                    <h3>Flavor Nivelanda</h3>
+                                <i class="fa-brands fa-windows" style={{color: "#f5ed0f"}}></i>
+                                    <h3>Microsoft Azure</h3>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </section>
-                {/* <!-- End Features Section --> */}
+                {/* <!-- Course Includes Section --> */}
 
                 {/* <!-- ======= Popular Courses Section ======= --> */}
                 <section id="popular-courses" className="courses">
@@ -177,62 +178,7 @@ const Home = () => {
 
                         <div className="row">
 
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div className="course-item">
-                                    <img src={require("../img/course-1.jpg")} className="img-fluid" alt="..."></img>
-                                    <div className="course-content">
-                                        <div className="d-flex justify-content-between align-items-center mb-3">
-                                            <h4>Web Development</h4>
-                                        </div>
-
-                                        <h3>Website Design</h3>
-                                        <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                                        <div className="trainer d-flex justify-content-between align-items-center">
-                                            <div className="trainer-rank d-flex align-items-center">
-                                                <i className="bx bx-heart"></i>&nbsp;65
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div className="course-item">
-                                    <img src={require("../img/course-1.jpg")} className="img-fluid" alt="..."></img>
-                                    <div className="course-content">
-                                        <div className="d-flex justify-content-between align-items-center mb-3">
-                                            <h4>Web Development</h4>
-                                        </div>
-
-                                        <h3>Website Design</h3>
-                                        <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                                        <div className="trainer d-flex justify-content-between align-items-center">
-                                            <div className="trainer-rank d-flex align-items-center">
-                                                <i className="bx bx-heart"></i>&nbsp;65
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div className="course-item">
-                                    <img src={require("../img/course-1.jpg")} className="img-fluid" alt="..."></img>
-                                    <div className="course-content">
-                                        <div className="d-flex justify-content-between align-items-center mb-3">
-                                            <h4>Web Development</h4>
-                                        </div>
-
-                                        <h3>Website Design</h3>
-                                        <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                                        <div className="trainer d-flex justify-content-between align-items-center">
-                                            <div className="trainer-rank d-flex align-items-center">
-                                                <i className="bx bx-heart"></i>&nbsp;65
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                            <CourseComponent></CourseComponent>
 
                             {/* <!-- End Course Item--> */}
 

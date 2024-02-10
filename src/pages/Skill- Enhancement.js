@@ -15,8 +15,8 @@ const SkillEnhancement = () => {
                 <div class="breadcrumbs aos-init aos-animate" data-aos="fade-in">
 
                     <div class="container">
-                        <h2>Events</h2>
-                        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+                        <h2>Skill Enhancement</h2>
+                        <p>Empower Your Potential: Skill Enhancement Programs at Vcentry Technology.</p>
                     </div>
                 </div>
                 {/* <!-- End Breadcrumbs --> */}
@@ -29,24 +29,24 @@ const SkillEnhancement = () => {
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src={require("../img/events-1.jpg")} alt="..."/>
+                                        <img src={require("../img/online-exam.jpg")} alt="..." />
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
-                                        <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                                        <h5 class="card-title">Online Exam</h5>
+                                        <p class="fst-italic text-center">Excel Anywhere: Elevate Your Skills with Online Exam Skill Enhancement at Vcentry Technology</p>
+                                        <p class="card-text">Master your skills effortlessly with our Online Exam Skill Enhancement programs at Vcentry Technology. Experience convenient and interactive learning modules designed to sharpen your abilities. Elevate your expertise through our digital platform, ensuring a seamless journey towards success</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img  src={require("../img/events-2.jpg")} alt="..."/>
+                                        <img src={require("../img/lab-practice.jpg")} alt="..." />
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
-                                        <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
-                                        <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                                        <h5 class="card-title">Lab Practice</h5>
+                                        <p class="fst-italic text-center">Hands-On Excellence: Lab Practice Skill Enhancement at Vcentry Technology</p>
+                                        <p class="card-text">Refine your expertise through hands-on Lab Practice at Vcentry Technology. Gain practical skills in a simulated environment, ensuring a seamless transition to real-world scenarios. Elevate your learning experience and enhance your proficiency for a competitive edge in the professional landscape</p>
                                     </div>
                                 </div>
 
@@ -54,12 +54,25 @@ const SkillEnhancement = () => {
                             <div class="col-md-6 d-flex align-items-stretch">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img  src={require("../img/events-2.jpg")} alt="..."/>
+                                        <img src={require("../img/interview-question.jpg")} alt="..." />
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
-                                        <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
-                                        <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                                        <h5 class="card-title">Interview Questions</h5>
+                                        <p class="fst-italic text-center">Mastering the Art of Interview Success: Skill Enhancement Programs at Vcentry Technology</p>
+                                        <p class="card-text">Sharpen your interview skills with our specialized training programs at Vcentry Technology. Gain confidence in articulating your achievements and responding to challenging questions. Elevate your career prospects through targeted skill enhancement for successful interviews.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 d-flex align-items-stretch">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src={require("../img/mock-interview.jpg")} alt="..." />
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mock Interviews</h5>
+                                        <p class="fst-italic text-center">Refine Your Readiness: Mock Interview Skill Enhancement at Vcentry Technology</p>
+                                        <p class="card-text">Develop your interview prowess with our Mock Interview Skill Enhancement program at Vcentry Technology. Gain real-world experience, receive constructive feedback, and boost your confidence for actual job interviews. Elevate your skills and maximize your chances of success in the competitive job market.</p>
                                     </div>
                                 </div>
 

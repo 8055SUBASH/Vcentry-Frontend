@@ -11,31 +11,35 @@ const FooterComponent = () => {
                         <div className="row">
 
                             <div className="col-lg-3 col-md-6 footer-contact">
-                                <h3 className='heading-color'>Mentor</h3>
+                                <h3 className='heading-color'>Address</h3>
                                 <p>
-                                    A108 Adam Street <br></br>
-                                    New York, NY 535022<br></br>
-                                    United States <br></br>
-                                    <strong>Phone:</strong> +1 5589 55488 55<br></br>
-                                    <strong>Email:</strong> info@example.com<br></br>
+                                    126, Race View Tower,<br></br>
+                                    Manikam lane,<br></br> 
+                                    opposite to Guindy Railway Station,<br></br>
+                                    near Subway,<br></br>
+                                    Guindy Institutional Area,<br></br>
+                                    SIDCO Industrial Estate,<br></br>
+                                    Guindy, Tamil Nadu<br></br><br></br>
+                                    <strong>Phone:</strong> 9500434122 | 9500434122<br></br>
+                                    <strong>Email:</strong> tagvcentry@gmail.com | tag@vcentry.com<br></br>
                                 </p>
                             </div>
 
                             <div className="col-lg-2 col-md-6 footer-links">
-                                <h3 className="heading-color">Useful Links</h3>
+                                <h3 className="heading-color">Useful Links</h3><br></br>
                                 <ul>
-                                    <li><NavLink to="/" style={{textDecoration : "none"}}><i className="bx bx-chevron-right"></i> Home</NavLink></li>
-                                    <li><NavLink to="/courses" style={{textDecoration : "none"}}><i className="bx bx-chevron-right"></i> Course</NavLink></li>
-                                    <li><NavLink to="/skill" style={{textDecoration : "none"}}><i className="bx bx-chevron-right"></i> Skill Enhancement</NavLink></li>
-                                    <li><NavLink to="/service" style={{textDecoration : "none"}}><i className="bx bx-chevron-right"></i> Service</NavLink></li>
-                                    <li><NavLink to="/review" style={{textDecoration : "none"}}><i className="bx bx-chevron-right"></i> Review</NavLink></li>
-                                    <li><NavLink to="/contact" style={{textDecoration : "none"}}><i className="bx bx-chevron-right"></i> Contact Us</NavLink></li>
-                                    
+                                    <li><NavLink to="/" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Home</NavLink></li>
+                                    <li><NavLink to="/courses" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Course</NavLink></li>
+                                    <li><NavLink to="/skill" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Skill Enhancement</NavLink></li>
+                                    <li><NavLink to="/service" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Service</NavLink></li>
+                                    <li><NavLink to="/review" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Review</NavLink></li>
+                                    <li><NavLink to="/contact" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Contact Us</NavLink></li>
+
                                 </ul>
                             </div>
 
                             <div className="col-lg-3 col-md-6 footer-links">
-                                <h3 className='heading-color'>Our Services</h3>
+                                <h3 className='heading-color'>Our Services</h3><br></br>
                                 <ul>
                                     <li><i className="bx bx-chevron-right"></i> Full Stack Development</li>
                                     <li><i className="bx bx-chevron-right"></i> Software Testing</li>
@@ -58,11 +62,7 @@ const FooterComponent = () => {
 
                     <div className="me-md-auto text-center text-md-start">
                         <div className="copyright">
-                            &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
-                        </div>
-                        <div className="credits">
-
-                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                            <h5>&copy;  2020  <strong><span>Copyright: </span></strong>Vcentry Technologies</h5>
                         </div>
                     </div>
                     <div className="social-links text-center text-md-right pt-3 pt-md-0">
