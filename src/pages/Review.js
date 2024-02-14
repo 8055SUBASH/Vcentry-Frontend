@@ -1,20 +1,106 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
+import axios from 'axios';
 
 const Review = () => {
+
+    useEffect(() =>{
+        showReview();
+    }, []);
+
+    const [allReviews, updateAllReviews] = useState([])
+
+    const [reviewStore, updateReviewStore] = useState({
+        Name: "",
+        Email: "",
+        Course: "",
+        Message: ""
+    })
+
+    const [errorForm, updateErrorForm] = useState({
+        Name: false,
+        Email: false,
+        Course: false,
+        Message: false
+    })
+
+    const inputReviewValue = (event) => {
+        updateReviewStore({ ...reviewStore, [event.target.id]: event.target.value });
+    }
+
+    const reviewUpdate = () => {
+
+        updateErrorForm({
+            ...errorForm,
+            Name: reviewStore.Name === "" ? true : false,
+            Email: reviewStore.Email === "" ? true : false,
+            Course: reviewStore.Course === "" ? true : false,
+            Message: reviewStore.Message === "" ? true : false
+        });
+
+        if (
+            reviewStore.Name === "" ||
+            reviewStore.Email === "" ||
+            reviewStore.Course === "" ||
+            reviewStore.Message === ""
+        ) {
+            // Do not submit the form if any field is empty
+            return;
+        }
+
+        const url = "http://localhost:5000/api/create/review";
+        axios.post(url, reviewStore)
+            .then((response) => {
+                console.log(response);
+                alert("Review Updated");
+                showReview();
+            }
+            )
+            .catch((error) => {
+                console.error(error);
+            }
+            )
+    }
+
+
+    const showReview = () => {
+        const url = "http://localhost:5000/api/read/review";
+        axios.get(url)
+            .then((response) => {
+                updateAllReviews(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            })
+    }
+    
+    const reviewList = allReviews.map((value, index) => (
+        <div key={index}>
+            <figure className="snip1533">
+                <figcaption>
+                    <blockquote>
+                        <p>{value.Message}</p>
+                        <strong>-{value.Email}</strong>
+                    </blockquote>
+                    <h3>{value.Name}</h3>
+                    <h4>{value.Course}</h4>
+                </figcaption>
+            </figure>
+        </div>
+    ));
+
     return (
         <div>
             <HeaderComponent></HeaderComponent>
 
-
             <main id="main">
 
                 {/* <!-- ======= Breadcrumbs ======= --> */}
-                <div class="breadcrumbs aos-init aos-animate" data-aos="fade-in">
+                <div className="breadcrumbs aos-init aos-animate" data-aos="fade-in">
 
-                    <div class="container">
+                    <div className="container">
                         <h2>Review</h2>
                         <p>Voices of Satisfaction: What Our Users Are Saying. </p>
                     </div>
@@ -23,60 +109,45 @@ const Review = () => {
 
 
                 {/* <!-- ======= Review  ======= --> */}
-                <section id="contact" class="contact">
+                <section id="contact" className="contact">
                     <div className="container">
 
                         <div className="row">
-                            <div class="row mt-5">
+                            <div className="row mt-5">
 
-
-
-                                <div class="col-lg-8 mt-5 mt-lg-0">
-
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-
-                                        <div class="row">
-                                            <div class="form-group mt-3">
-                                                <label>Enter  Name  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" Name" required></input>
+                                <div className="col-lg-8 mt-5 mt-lg-0 container-fluid">
+                                    <div className="php-email-form">
+                                        <div className="php-email-form">
+                                            <div className="row">
+                                                <div className="form-group mt-3">
+                                                    <label>Enter  Name  :</label>
+                                                    <input type="text" className="form-control" id="Name" placeholder="Name" required onChange={inputReviewValue}></input>
+                                                    {errorForm.Name && <span className='error-class'>Required*</span>}
+                                                </div>
                                             </div>
-
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="form-group mt-3">
-                                                <label>Enter E-mail Id  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" E-mail Id" required></input>
+                                            <div className="row">
+                                                <div className="form-group mt-3">
+                                                    <label>Enter E-mail Id  :</label>
+                                                    <input type="text" className="form-control" id="Email" placeholder=" E-mail Id" required onChange={inputReviewValue}></input>
+                                                    {errorForm.Email && <span className='error-class'>Required*</span>}
+                                                </div>
                                             </div>
-
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="form-group mt-3">
-                                                <label>Enter Course Name  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" Courses Name" required></input>
+                                            <div className="row">
+                                                <div className="form-group mt-3">
+                                                    <label>Enter Course Name with Badge No :</label>
+                                                    <input type="text" className="form-control" id="Course" placeholder=" Courses Name" required onChange={inputReviewValue}></input>
+                                                    {errorForm.Course && <span className='error-class'>Required*</span>}
+                                                </div>
                                             </div>
-
+                                            <div className="form-group mt-3">
+                                                <label>Enter Message  :</label>
+                                                <textarea className="form-control" id="Message" rows="5" placeholder="Message" required onChange={inputReviewValue}></textarea>
+                                                {errorForm.Message && <span className='error-class'>Required*</span>}
+                                            </div>
+                                            <div className="text-center"><button type="submit" onClick={() => reviewUpdate()}>Send</button></div>
                                         </div>
-
-                                        <div class="form-group mt-3">
-                                            <label>Enter Message  :</label>
-                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                        </div>
-
-
-                                        <div class="my-3">
-                                            <div class="loading">Loading</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                                        </div>
-                                        <div class="text-center"><button type="submit">Send</button></div>
-
-                                    </form>
-
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
 
@@ -86,8 +157,13 @@ const Review = () => {
 
 
             </main>
-            {/* <!-- End #main --> */}
+            {/* <!-- End #main --> */}<br></br>
+            <center><h1>Our Students Reviews</h1></center>
+            <div className='review-box'>
+    
+                        {reviewList}
 
+            </div>
 
 
             <FooterComponent></FooterComponent>

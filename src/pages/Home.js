@@ -91,73 +91,73 @@ const Home = () => {
                         <div className="row" >
                             <div className="col-lg-3 col-md-4">
                                 <div className="icon-box">
-                                    <i class="fa-brands fa-java" style={{color: "#ff3d3d"}}></i>
+                                    <i className="fa-brands fa-java" style={{color: "#ff3d3d"}}></i>
                                     <h3>Java Programming</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                                 <div className="icon-box">
-                                <i class="fa-brands fa-js" style={{color: "#FFD43B"}}></i>
+                                <i className="fa-brands fa-js" style={{color: "#FFD43B"}}></i>
                                     <h3>Javascript</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
                                 <div className="icon-box">
-                                <i class="fa-brands fa-python" style={{color: "#74C0FC"}}></i>
+                                <i className="fa-brands fa-python" style={{color: "#74C0FC"}}></i>
                                     <h3>Python Programming</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
                                 <div className="icon-box">
-                                <i class="fa-brands fa-react" style={{color: "#B197FC"}}></i>
+                                <i className="fa-brands fa-react" style={{color: "#B197FC"}}></i>
                                     <h3>React JS</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-brands fa-angular" style={{color: "#a22ce2"}}></i>
+                                <i className="fa-brands fa-angular" style={{color: "#a22ce2"}}></i>
                                     <h3>Angular JS</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-solid fa-microscope" style={{color: "#da1b1b"}}></i>
+                                <i className="fa-solid fa-microscope" style={{color: "#da1b1b"}}></i>
                                     <h3>Software Testing</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-solid fa-cloud" style={{color: "#2ba9e9"}}></i>
+                                <i className="fa-solid fa-cloud" style={{color: "#2ba9e9"}}></i>
                                     <h3>Cloud Technology</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-solid fa-magnifying-glass-chart" style={{color: "#cf20c1"}}></i>
+                                <i className="fa-solid fa-magnifying-glass-chart" style={{color: "#cf20c1"}}></i>
                                     <h3>Data Analyst</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-solid fa-flask" style={{color: "#9d4a06"}}></i>
+                                <i className="fa-solid fa-flask" style={{color: "#9d4a06"}}></i>
                                     <h3>Data Science</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-solid fa-infinity" style={{color: "#ff4d00"}}></i>
+                                <i className="fa-solid fa-infinity" style={{color: "#ff4d00"}}></i>
                                     <h3>Devops</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                    <i class="fa-solid fa-database" style={{color: "#59e010"}}></i>
+                                    <i className="fa-solid fa-database" style={{color: "#59e010"}}></i>
                                     <h3>SQL Database</h3>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 mt-4">
                                 <div className="icon-box">
-                                <i class="fa-brands fa-windows" style={{color: "#f5ed0f"}}></i>
+                                <i className="fa-brands fa-windows" style={{color: "#f5ed0f"}}></i>
                                     <h3>Microsoft Azure</h3>
                                 </div>
                             </div>

@@ -13,8 +13,8 @@ const Courses = () => {
             <main id="main" data-aos="fade-in" className="aos-init aos-animate">
 
                 {/* <!-- ======= Breadcrumbs ======= --> */}
-                <div class="breadcrumbs">
-                    <div class="container">
+                <div className="breadcrumbs">
+                    <div className="container">
                         <h2>Courses</h2>
                         <p>
                             Explore Cutting-edge Courses at Vcentry Technology. Elevate your skills with our diverse range of tech courses. Unlock opportunities for growth and innovation. Join Vcentry Technology for a transformative learning experience.</p>
@@ -24,10 +24,10 @@ const Courses = () => {
 
 
                 {/* <!-- ======= Courses Section ======= --> */}
-                <section id="courses" class="courses">
-                    <div class="container aos-init aos-animate" data-aos="fade-up">
+                <section id="courses" className="courses">
+                    <div className="container aos-init aos-animate" data-aos="fade-up">
 
-                        <div class="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                        <div className="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                             <CourseComponent></CourseComponent>
                             <CourseComponent></CourseComponent>
                             <CourseComponent></CourseComponent>

@@ -11,9 +11,9 @@ const Service = () => {
             <main id="main">
 
                 {/* <!-- ======= Breadcrumbs ======= --> */}
-                <div class="breadcrumbs aos-init aos-animate" data-aos="fade-in">
+                <div className="breadcrumbs aos-init aos-animate" data-aos="fade-in">
 
-                    <div class="container">
+                    <div className="container">
                         <h2>Services</h2>
                         <p>Empowering Success: Our Comprehensive Range of Services at Vcentry Technology. </p>
                     </div>
@@ -21,42 +21,42 @@ const Service = () => {
                 {/* <!-- End Breadcrumbs --> */}
 
                 <div className='card-alignment'>
-                    <div class="service-card"><img src={require("../img/experts.jpg")}></img>
-                        <div class="info">
+                    <div className="service-card"><img src={require("../img/experts.jpg")}></img>
+                        <div className="info">
                             <h1>IT experts as Trainers</h1>
                             <p>Industry-seasoned IT experts, serving as our trainers, deliver unparalleled knowledge transfer and skill development for an exceptional learning experience.</p>
 
                         </div>
                     </div><br></br>
-                    <div class="service-card"><img src={require("../img/lab-support.jpg")}></img>
-                        <div class="info">
+                    <div className="service-card"><img src={require("../img/lab-support.jpg")}></img>
+                        <div className="info">
                             <h1>24 Hours Lab Support</h1>
                             <p>Benefit from round-the-clock lab support ensuring uninterrupted access and assistance for all your technical needs.</p>
 
                         </div>
                     </div><br></br>
-                    <div class="service-card"><img src={require("../img/flexible-timings.jpg")}></img>
-                        <div class="info">
+                    <div className="service-card"><img src={require("../img/flexible-timings.jpg")}></img>
+                        <div className="info">
                             <h1>Flexible Timings</h1>
                             <p>Experience the convenience of flexible timings tailored to accommodate your schedule with us.</p>
 
                         </div>
                     </div>
-                    <div class="service-card"><img src={require("../img/preparation.jpg")}></img>
-                        <div class="info">
+                    <div className="service-card"><img src={require("../img/preparation.jpg")}></img>
+                        <div className="info">
                             <h1>Interview Preparation</h1>
                             <p>Empower your career journey with our interview preparation services, designed to enhance your confidence, skills, and readiness for success in professional interviews.</p>
 
                         </div>
                     </div>
-                    <div class="service-card"><img src={require("../img/affordable.jpg")}></img>
-                        <div class="info">
+                    <div className="service-card"><img src={require("../img/affordable.jpg")}></img>
+                        <div className="info">
                             <h1>Affordable Fees</h1>
                             <p>Experience quality education without breaking the bank with our affordable fees.</p>
                         </div>
                     </div>
-                    <div class="service-card"><img src={require("../img/assistance.jpg")}></img>
-                        <div class="info">
+                    <div className="service-card"><img src={require("../img/assistance.jpg")}></img>
+                        <div className="info">
                             <h1>Placement Assistance</h1>
                             <p>Facilitating your career journey with dedicated placement assistance for optimal professional opportunities.</p>
 
@@ -85,7 +85,7 @@ const Service = () => {
                                     <div className="row">
                                         <div className="col-xl-4 d-flex align-items-stretch">
                                             <div className="icon-box mt-4 mt-xl-0">
-                                                <i class="fa-solid fa-id-card-clip"></i>
+                                                <i className="fa-solid fa-id-card-clip"></i>
                                                 <h4>Internship Offer</h4>
                                                 <p>
                                                     Choose us for unparalleled opportunities to kickstart your career through our dynamic internships, offering hands-on experience and mentorship to fuel your professional growth.</p>
@@ -93,7 +93,7 @@ const Service = () => {
                                         </div>
                                         <div className="col-xl-4 d-flex align-items-stretch">
                                             <div className="icon-box mt-4 mt-xl-0">
-                                                <i class="fa-solid fa-certificate"></i>
+                                                <i className="fa-solid fa-certificate"></i>
                                                 <h4>Cerificates</h4>
                                                 <p>
                                                     Choose us because we not only offer expert guidance but also provide industry-recognized certificates, validating your skills and boosting your professional credentials</p>
@@ -101,7 +101,7 @@ const Service = () => {
                                         </div>
                                         <div className="col-xl-4 d-flex align-items-stretch">
                                             <div className="icon-box mt-4 mt-xl-0">
-                                                <i class="fa-solid fa-diagram-project"></i>
+                                                <i className="fa-solid fa-diagram-project"></i>
                                                 <h4>Live Project</h4>
                                                 <p>
                                                     Choose us because we offer a unique learning experience by allowing students to work on live projects, gaining hands-on expertise and valuable insights that go beyond traditional classroom teachings.</p>
