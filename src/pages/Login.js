@@ -11,47 +11,53 @@ const AdminLogin = () => {
             <main id="main">
 
                 {/* <!-- ======= Breadcrumbs ======= --> */}
-                <div class="breadcrumbs aos-init aos-animate" data-aos="fade-in">
+                <div className="breadcrumbs aos-init aos-animate" data-aos="fade-in">
 
-                    <div class="container">
+                    <div className="container">
                         <h2>Admin Login Page</h2>
                     </div>
                 </div>
                 {/* <!-- End Breadcrumbs --> */}
 
                 {/* <!-- ======= login  ======= --> */}
-                <section id="contact" class="contact">
+                <section id="contact" className="contact">
                     <div className="container">
 
                         <div className="row">
-                            <div class="row mt-5">
+                            <div className="row mt-5">
 
 
 
-                                <div class="col-lg-8 mt-5 mt-lg-0">
+                                <div className="col-lg-8 mt-5 mt-lg-0 container-fluid">
 
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                    <div  className="php-email-form">
                                         
-                                            <div class="row">
-                                                <div class="form-group mt-3">
+                                            <div className="row">
+                                                <div className="form-group mt-3">
                                                     <label>Enter Admin Name  :</label>
-                                                    <input type="text" name="name" class="form-control" id="name" placeholder="Admin Name" required></input>
+                                                    <input type="text" name="name" className="form-control" id="name" placeholder="Admin Name" required></input>
                                                 </div>
 
                                             </div>
-                                            <div class="form-group mt-3">
+                                            <div className="form-group mt-3">
                                                 <label>Enter password        :</label>
-                                                <input type="password" class="form-control" name="password" id="password" placeholder="password" required></input>
+                                                <input type="password" className="form-control" name="password" id="password" placeholder="password"  required></input>
                                             </div>
 
-                                            <div class="my-3">
-                                                <div class="loading">Loading</div>
-                                                <div class="error-message"></div>
-                                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                            {/* <div className="my-3">
+                                                <div className="loading">Loading</div>
+                                                <div className="error-message"></div>
+                                                <div className="sent-message">Your message has been sent. Thank you!</div>
+                                            </div> */}
+                                            <div className="two-btn">
+                                            
+                                            <div className="text-center"><button type="submit">Login</button></div>
+
+                                            <div className="msg-ivd">{false && <h6>Invalid AdminName or Password ...</h6>}</div>
+
                                             </div>
-                                            <div class="text-center"><button type="submit">Login</button></div>
                                        
-                                    </form>
+                                    </div>
 
                                 </div>
 

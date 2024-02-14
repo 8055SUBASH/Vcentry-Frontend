@@ -97,3 +97,65 @@
     background: dodgerblue;
     color: white;
   }
+
+
+  /* --------inline-block--------- */
+
+  .trend {
+    display: inline-block;
+  }
+
+  /* -----space-evently----- */
+
+  .two-btn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  /* ------margin------ */
+
+  .msg {
+    margin: 20px;
+    color: black;
+  }
+
+  /* -----msg-Invalid----- */
+
+  .msg-ivd {
+    margin: 20px;
+    color: red;
+  }
+
+  /* ------Required------ */
+
+  .rq-msg {
+    color: red;
+  }
+
+
+  /* -------table------- */
+
+  .tab-le{
+    padding: 20px;
+
+  }
+  /* -------table------- */
+  .cl-bdr{
+    
+    border-color: black;
+    text-align: center;
+    
+  }
+  /* -------table-head------- */
+
+ 
+  /* -------table------- */
+
+
+  .img-agm{
+    width: 356px;
+    height: 236px;
+    object-fit:fill;
+
+  }

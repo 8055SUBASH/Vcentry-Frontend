@@ -12,9 +12,9 @@ const Review = () => {
             <main id="main">
 
                 {/* <!-- ======= Breadcrumbs ======= --> */}
-                <div class="breadcrumbs aos-init aos-animate" data-aos="fade-in">
+                <div className="breadcrumbs aos-init aos-animate" data-aos="fade-in">
 
-                    <div class="container">
+                    <div className="container">
                         <h2>Review</h2>
                         <p>Voices of Satisfaction: What Our Users Are Saying. </p>
                     </div>
@@ -23,55 +23,55 @@ const Review = () => {
 
 
                 {/* <!-- ======= Review  ======= --> */}
-                <section id="contact" class="contact">
+                <section id="contact" className="contact">
                     <div className="container">
 
                         <div className="row">
-                            <div class="row mt-5">
+                            <div className="row mt-5">
 
 
 
-                                <div class="col-lg-8 mt-5 mt-lg-0">
+                                <div className="col-lg-8 mt-5 mt-lg-0">
 
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                    <form action="forms/contact.php" method="post" role="form" className="php-email-form">
 
-                                        <div class="row">
-                                            <div class="form-group mt-3">
+                                        <div className="row">
+                                            <div className="form-group mt-3">
                                                 <label>Enter  Name  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" Name" required></input>
+                                                <input type="text" name="name" className="form-control" id="name" placeholder=" Name" required></input>
                                             </div>
 
                                         </div>
 
-                                        <div class="row">
-                                            <div class="form-group mt-3">
+                                        <div className="row">
+                                            <div className="form-group mt-3">
                                                 <label>Enter E-mail Id  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" E-mail Id" required></input>
+                                                <input type="text" name="name" className="form-control" id="name" placeholder=" E-mail Id" required></input>
                                             </div>
 
                                         </div>
 
 
-                                        <div class="row">
-                                            <div class="form-group mt-3">
+                                        <div className="row">
+                                            <div className="form-group mt-3">
                                                 <label>Enter Course Name  :</label>
-                                                <input type="text" name="name" class="form-control" id="name" placeholder=" Courses Name" required></input>
+                                                <input type="text" name="name" className="form-control" id="name" placeholder=" Courses Name" required></input>
                                             </div>
 
                                         </div>
 
-                                        <div class="form-group mt-3">
+                                        <div className="form-group mt-3">
                                             <label>Enter Message  :</label>
-                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                            <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                                         </div>
 
 
-                                        <div class="my-3">
-                                            <div class="loading">Loading</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                                        <div className="my-3">
+                                            <div className="loading">Loading</div>
+                                            <div className="error-message"></div>
+                                            <div className="sent-message">Your message has been sent. Thank you!</div>
                                         </div>
-                                        <div class="text-center"><button type="submit">Send</button></div>
+                                        <div className="text-center"><button type="submit">Send</button></div>
 
                                     </form>
 

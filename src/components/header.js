@@ -18,13 +18,13 @@ const HeaderComponent = () => {
               <NavLink to="/skill" style={{textDecoration :"none"}}>Skill Enhancement</NavLink>
               <NavLink to="/service" style={{textDecoration :"none"}}>Service</NavLink>
               <NavLink to="/review" style={{textDecoration :"none"}}>Review</NavLink>
-              <NavLink to="/contact" style={{textDecoration :"none"}}>Contact Us</NavLink>
+              <NavLink to="/concontact" style={{textDecoration :"none"}}>Contact Us</NavLink>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
           {/* <!-- .navbar --> */}
 
-          <button href="courses.html" className="get-started-btn btn btn-outline-light">Get Started</button>
+          
 
         </div>
       </header>
