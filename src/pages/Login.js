@@ -56,7 +56,11 @@ const AdminLogin = () => {
                 {/* <!-- End Breadcrumbs --> */}
 
                 {/* <!-- ======= login  ======= --> */}
+<<<<<<< HEAD
                 <section id="contact" className="contact ">
+=======
+                <section id="contact" className="contact">
+>>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb
                     <div className="container">
 
                         <div className="row">
@@ -66,6 +70,7 @@ const AdminLogin = () => {
 
                                 <div className="col-lg-8 mt-5 mt-lg-0 container-fluid">
 
+<<<<<<< HEAD
                                     <div className="php-email-form">
 
                                         <div className="row">
@@ -87,6 +92,35 @@ const AdminLogin = () => {
                                             <button onClick={() => loginButton()} type="submit">Login</button>
                                         </div>
 
+=======
+                                    <div  className="php-email-form">
+                                        
+                                            <div className="row">
+                                                <div className="form-group mt-3">
+                                                    <label>Enter Admin Name  :</label>
+                                                    <input type="text" name="name" className="form-control" id="name" placeholder="Admin Name" required></input>
+                                                </div>
+
+                                            </div>
+                                            <div className="form-group mt-3">
+                                                <label>Enter password        :</label>
+                                                <input type="password" className="form-control" name="password" id="password" placeholder="password"  required></input>
+                                            </div>
+
+                                            {/* <div className="my-3">
+                                                <div className="loading">Loading</div>
+                                                <div className="error-message"></div>
+                                                <div className="sent-message">Your message has been sent. Thank you!</div>
+                                            </div> */}
+                                            <div className="two-btn">
+                                            
+                                            <div className="text-center"><button type="submit">Login</button></div>
+
+                                            <div className="msg-ivd">{false && <h6>Invalid AdminName or Password ...</h6>}</div>
+
+                                            </div>
+                                       
+>>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb
                                     </div>
 
                                 </div>

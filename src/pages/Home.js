@@ -1,11 +1,55 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+
+import axios from 'axios';
 
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
-import CourseComponent from '../components/course-component';
+import CourseTrend from '../components/trend-courses-component';
 
 const Home = () => {
+
+ // -------------------------------------USE-EFFECT-----------------------------------------------------------------------------------
+ useEffect(() =>{
+    loadTrend();
+}, []);
+// -------------------------------------STORAGE--------------------------------------------------------------------------------------
+
+const [trendRecord, updateTrendRecord] = useState ([]);
+
+// -----------------------------------GET-COURSES------------------------------------------------------------------------------------
+
+const loadTrend = () => {
+
+        const url ="http://localhost:5000/api/list/trend";
+
+        axios.get(url)
+        .then((response) => {
+            updateTrendRecord(response.data);
+            // context.dataExchange(response.data); //DATASHARING
+        })
+        .catch((error) => {
+            console.log(error); 
+        })
+
+    }  
+
+// ------------------------------------Mapping----------------------------------------------------------------------------------------
+
+
+const detailsTrend = trendRecord.map((value, index) => {
+    return(
+
+        <CourseTrend key={index} info={value}></CourseTrend>
+        
+    )
+  })
+
+
+
+
+
+
     return (
         <div>
 
@@ -178,8 +222,7 @@ const Home = () => {
 
                         <div className="row">
 
-                            <CourseComponent></CourseComponent>
-
+                            {detailsTrend}
                             {/* <!-- End Course Item--> */}
 
                         </div>

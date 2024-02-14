@@ -3,6 +3,7 @@ import React, { useState, useContext } from 'react';
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 
+<<<<<<< HEAD:src/pages/Contact.js
 import axios from 'axios';
 
 const Contact = () => {
@@ -67,6 +68,9 @@ const Contact = () => {
 
    
 
+=======
+const ContactPage = () => {
+>>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb:src/pages/Contact-Page.js
     return (
         <div>
             <HeaderComponent></HeaderComponent>
@@ -87,7 +91,11 @@ const Contact = () => {
 
                         <div className="row mt-5">
 
+<<<<<<< HEAD:src/pages/Contact.js
                             <div  className="col-lg-4">
+=======
+                            <div className="col-lg-4">
+>>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb:src/pages/Contact-Page.js
                                 <div className="info">
                                     <div className="address">
                                         <i className="bi bi-geo-alt"></i>
@@ -113,6 +121,7 @@ const Contact = () => {
 
                             <div className="col-lg-8 mt-5 mt-lg-0">
 
+<<<<<<< HEAD:src/pages/Contact.js
                                 <div className="php-email-form" >
                                     <div className="row">
                                         <div className="col-md-6 form-group">
@@ -142,6 +151,30 @@ const Contact = () => {
                                     </div>
                                     <button type='submit' onClick={() => submitMessage()}>Send Message</button>
                                 </div>
+=======
+                                <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                                    <div className="row">
+                                        <div className="col-md-6 form-group">
+                                            <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required></input>
+                                        </div>
+                                        <div className="col-md-6 form-group mt-3 mt-md-0">
+                                            <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required></input>
+                                        </div>
+                                    </div>
+                                    <div className="form-group mt-3">
+                                        <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required></input>
+                                    </div>
+                                    <div className="form-group mt-3">
+                                        <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div className="my-3">
+                                        <div className="loading">Loading</div>
+                                        <div className="error-message"></div>
+                                        <div className="sent-message">Your message has been sent. Thank you!</div>
+                                    </div>
+                                    <div className="text-center"><button type="submit">Send Message</button></div>
+                                </form>
+>>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb:src/pages/Contact-Page.js
 
                             </div>
 
@@ -161,4 +194,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactPage;

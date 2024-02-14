@@ -33,7 +33,7 @@ const FooterComponent = () => {
                                     <li><NavLink to="/skill" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Skill Enhancement</NavLink></li>
                                     <li><NavLink to="/service" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Service</NavLink></li>
                                     <li><NavLink to="/review" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Review</NavLink></li>
-                                    <li><NavLink to="/contact" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Contact Us</NavLink></li>
+                                    <li><NavLink to="/concontact" style={{ textDecoration: "none" }}><i className="bx bx-chevron-right"></i> Contact Us</NavLink></li>
 
                                 </ul>
                             </div>
