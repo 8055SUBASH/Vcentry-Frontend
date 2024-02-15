@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // pages
@@ -33,7 +33,7 @@ import "./vendor/swiper/swiper-bundle.min.css";
 
 const App = () => {
 
-    
+
 
   return (
     <div>

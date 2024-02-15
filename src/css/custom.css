@@ -11,6 +11,8 @@
   margin-left: 5%;
 }
 
+/* ---------------------------------------------------------------------------------------------- */
+
 .main-nav {
   display: none;
 }
@@ -128,7 +130,7 @@
   border-radius: 25px;
 }
 
-.box-alignment-1{
+.box-alignment-1 {
   width: 90%;
   height: 35%;
   background-color: #ecf4ec;
@@ -142,42 +144,33 @@
   border-left: #EE633A 10px solid;
 }
 
-.logo-alignment{
+.logo-alignment {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.header-alignment{
- padding-left: 20%;
+.header-alignment {
+  padding-left: 20%;
 
 }
 
-.span-alignment{
+.span-alignment {
   display: block;
   justify-content: space-evenly;
 }
+
 .review-scroll {
   overflow: auto;
 }
-.icon-aligment{
+
+/* --------------------------------------------------------------------------------- */
+.icon-aligment {
   width: 20%;
   margin-top: 5%;
 }
-.content-width{
-  width: 80%;
-}
-/* ----------------------------------------------------------------------------------------------------------- */
-.heading-color {
-  color: white;
-}
 
-.card-alignment {
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 5%;
+.content-width {
+  width: 80%;
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -341,4 +334,3 @@
   object-fit: fill;
 
 }
-
