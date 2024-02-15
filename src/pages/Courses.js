@@ -1,66 +1,10 @@
-import React, {useState, useEffect} from 'react';
-
-import axios from 'axios';
-
-// useContext,
+import React from 'react';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 import CourseComponent from '../components/course-component';
 
-
-// import DataSharing from '../context-api';
-
-
-
-
 const Courses = () => {
-
-
-    // const context = useContext(DataSharing);
-
-    // const detailsList = context.coursesList.map((value, index) =>{
-    //     return(
-    //         <CourseComponent key={index} info={value}></CourseComponent>
-    //     )
-    // })
-
-    // -------------------------------------USE-EFFECT-----------------------------------------------------------------------------------
-    useEffect(() =>{
-        loadDetails();
-    }, []);
-    // -------------------------------------STORAGE--------------------------------------------------------------------------------------
-   
-    const [detailRecord, updateDetailRecord] = useState ([]);
-
-    // -----------------------------------GET-COURSES------------------------------------------------------------------------------------
-
-    const loadDetails = () => {
-
-        const url ="http://localhost:5000/api/list/courses";
-
-        axios.get(url)
-        .then((response) => {
-            updateDetailRecord(response.data);
-            // context.dataExchange(response.data); //DATASHARING
-        })
-        .catch((error) => {
-            console.log(error); 
-        })
-
-    }
-
-    // ------------------------------------Mapping----------------------------------------------------------------------------------------
-
-
-    const detailsList = detailRecord.map((value, index) => {
-        return(
-
-            <CourseComponent key={index} info={value}></CourseComponent>
-            
-        )
-      })
-
     return (
         <div>
             <HeaderComponent></HeaderComponent>
@@ -84,15 +28,9 @@ const Courses = () => {
                     <div className="container aos-init aos-animate" data-aos="fade-up">
 
                         <div className="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-<<<<<<< HEAD
                             <CourseComponent></CourseComponent>
                             <CourseComponent></CourseComponent>
                             <CourseComponent></CourseComponent>
-=======
-                           
-                           {detailsList}
-                           
->>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb
                         </div>
 
                     </div>

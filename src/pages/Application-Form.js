@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 import axios from 'axios';
+import AdminHeader from '../components/admin-header';
 
 const ApplicationForm = () => {
 
@@ -57,7 +57,7 @@ const ApplicationForm = () => {
 
     return (
         <div>
-            <HeaderComponent></HeaderComponent>
+            <AdminHeader></AdminHeader>
             <div className='form-list container-fluid'>
                 <table className="table table-hover table-success">
                     <thead >

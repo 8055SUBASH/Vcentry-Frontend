@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const Review = () => {
 
-    useEffect(() =>{
+    useEffect(() => {
         showReview();
     }, []);
 
@@ -75,19 +75,23 @@ const Review = () => {
                 console.error(error);
             })
     }
-    
+
     const reviewList = allReviews.map((value, index) => (
-        <div key={index}>
-            <figure className="snip1533">
-                <figcaption>
-                    <blockquote>
-                        <p>{value.Message}</p>
-                        <strong>-{value.Email}</strong>
-                    </blockquote>
-                    <h3>{value.Name}</h3>
-                    <h4>{value.Course}</h4>
-                </figcaption>
-            </figure>
+        <div key={index} className='box-alignment-1'>
+
+            <div className='icon-alignment'>
+                <br></br><img width={120}  src={require("../img/Logo-icon.png")}></img>
+            </div>
+            <div className='content-width'>
+                <br></br>
+                <center><h4><strong>Name:  </strong>{value.Name}</h4><hr></hr>
+                    <div className='span-alignment'>
+                        <span class="d-block font-weight-bold name"><strong>Course Name and Badge No:  </strong> {value.Course}</span>
+                        <span class="date text-black-50"><strong>Email ID:  </strong>{value.Email}</span>
+                    </div>
+                    <p class="comment-text">{value.Message}</p></center>
+            </div>
+
         </div>
     ));
 
@@ -115,7 +119,6 @@ const Review = () => {
                         <div className="row">
                             <div className="row mt-5">
 
-<<<<<<< HEAD
                                 <div className="col-lg-8 mt-5 mt-lg-0 container-fluid">
                                     <div className="php-email-form">
                                         <div className="php-email-form">
@@ -139,35 +142,6 @@ const Review = () => {
                                                     <input type="text" className="form-control" id="Course" placeholder=" Courses Name" required onChange={inputReviewValue}></input>
                                                     {errorForm.Course && <span className='error-class'>Required*</span>}
                                                 </div>
-=======
-
-
-                                <div className="col-lg-8 mt-5 mt-lg-0">
-
-                                    <form action="forms/contact.php" method="post" role="form" className="php-email-form">
-
-                                        <div className="row">
-                                            <div className="form-group mt-3">
-                                                <label>Enter  Name  :</label>
-                                                <input type="text" name="name" className="form-control" id="name" placeholder=" Name" required></input>
-                                            </div>
-
-                                        </div>
-
-                                        <div className="row">
-                                            <div className="form-group mt-3">
-                                                <label>Enter E-mail Id  :</label>
-                                                <input type="text" name="name" className="form-control" id="name" placeholder=" E-mail Id" required></input>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div className="row">
-                                            <div className="form-group mt-3">
-                                                <label>Enter Course Name  :</label>
-                                                <input type="text" name="name" className="form-control" id="name" placeholder=" Courses Name" required></input>
->>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb
                                             </div>
                                             <div className="form-group mt-3">
                                                 <label>Enter Message  :</label>
@@ -176,26 +150,7 @@ const Review = () => {
                                             </div>
                                             <div className="text-center"><button type="submit" onClick={() => reviewUpdate()}>Send</button></div>
                                         </div>
-<<<<<<< HEAD
                                     </div>
-=======
-
-                                        <div className="form-group mt-3">
-                                            <label>Enter Message  :</label>
-                                            <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                        </div>
-
-
-                                        <div className="my-3">
-                                            <div className="loading">Loading</div>
-                                            <div className="error-message"></div>
-                                            <div className="sent-message">Your message has been sent. Thank you!</div>
-                                        </div>
-                                        <div className="text-center"><button type="submit">Send</button></div>
-
-                                    </form>
-
->>>>>>> 3162eaf645ae6ea450ad360002752594ad5b00eb
                                 </div>
                             </div>
                         </div>
@@ -209,8 +164,10 @@ const Review = () => {
             {/* <!-- End #main --> */}<br></br>
             <center><h1>Our Students Reviews</h1></center>
             <div className='review-box'>
-    
-                        {reviewList}
+
+
+                {reviewList}
+
 
             </div>
 
