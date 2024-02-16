@@ -83,6 +83,7 @@ const CoursesDetail = () => {
         axios.post(url, uploadedCourses)
             .then((response) => {
                 alert(response.data);
+                loadDetails();
                 
             })
             .catch((error) => {
@@ -128,6 +129,7 @@ const CoursesDetail = () => {
         axios.post(url, uploadedCourses)
             .then((response) => {
                 alert(response.data);
+                loadTrend();
                 
             })
             .catch((error) => {

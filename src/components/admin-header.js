@@ -1,28 +1,31 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import { NavLink, Link } from 'react-router-dom';
 
-const AdminHeader = () => {
-    return (
-        <div>
-            <header id="header" className="fixed-top">
-                <div className="container d-flex align-items-center">
-                    <img className="logo me-auto" src={require("../img/Logo.png")} width={250} alt="Logo" />
+const AppNavbar = () => {
+  return (
+    <div className='header-alignment' >
+      <Navbar expand="lg" fixed="top" bg="dark" variant="dark">
+        <Navbar.Brand className="mr-auto">
+          <Link to="/">
+            <img alt="Logo" src={require("../img/Logo.png")} width={300} height={50} className="d-inline-block align-top logo-alignment" />
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: "#EE633A", marginRight: '3%' }} />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto" style={{paddingLeft: "170px"}} >
+            <NavLink to="/details" style={{ textDecoration: "none" }}>Course Details</NavLink>
+            <NavLink to="/application" style={{ textDecoration: "none" }}> Contact Form </NavLink>
+            <NavLink to="/reviewform" style={{ textDecoration: "none" }}>Review Form</NavLink>
+            <NavLink className="logout-button" to="/*" style={{ textDecoration: "none" }}>Log out </NavLink>
+          </Nav>
 
-                    <nav expand="lg" id="navbar" className="navbar order-last order-lg-0">
+        </Navbar.Collapse>
+      </Navbar>
 
-                            <Nav className="mr-auto">
-                                <NavLink to="/details" style={{ textDecoration: "none" }}>Course Details</NavLink>
-                                <NavLink to="/application" style={{ textDecoration: "none" }}>Contact Form</NavLink>
-                                <NavLink to="/reviewform" style={{ textDecoration: "none" }}>Review Form</NavLink>
-                                <button className='btn btn-success'><NavLink to="/*" style={{ textDecoration: "none" }}>Log out</NavLink></button>
-                            </Nav>
+    </div>
+  );
+}
 
-                    </nav>
-                </div>
-            </header>
-        </div>
-    );
-};
-
-export default AdminHeader;
+export default AppNavbar;
+<NavLink className="logout-button" to="/*" style={{ textDecoration: "none" }}>Log out</NavLink>
