@@ -6,6 +6,7 @@ import axios from 'axios';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
+import AdminHeader from '../components/admin-header';
 
 // ------------------------Components------------------------------------------
 
@@ -268,7 +269,7 @@ const CoursesDetail = () => {
 
     return (
         <div>
-            <HeaderComponent></HeaderComponent>
+            <AdminHeader></AdminHeader>
 
 
             <main id="main">

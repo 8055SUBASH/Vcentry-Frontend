@@ -13,7 +13,8 @@ const AdminHeader = () => {
 
                             <Nav className="mr-auto">
                                 <NavLink to="/details" style={{ textDecoration: "none" }}>Course Details</NavLink>
-                                <NavLink to="/application" style={{ textDecoration: "none" }}>Cotact Form</NavLink>
+                                <NavLink to="/application" style={{ textDecoration: "none" }}>Contact Form</NavLink>
+                                <NavLink to="/reviewform" style={{ textDecoration: "none" }}>Review Form</NavLink>
                                 <button className='btn btn-success'>Log out</button>
                             </Nav>
 

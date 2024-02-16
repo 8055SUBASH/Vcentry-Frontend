@@ -29,6 +29,7 @@ import "./vendor/bootstrap-icons/bootstrap-icons.css";
 import "./vendor/boxicons/css/boxicons.min.css";
 import "./vendor/remixicon/remixicon.css";
 import "./vendor/swiper/swiper-bundle.min.css";
+import ReviewForm from './pages/Review-Form';
 
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="admin" element={<AdminLogin></AdminLogin>}></Route>
           <Route path="details" element={<CoursesDetail></CoursesDetail>}></Route>
           <Route path="application" element={<ApplicationForm></ApplicationForm>}></Route>
+          <Route path="reviewform" element={<ReviewForm></ReviewForm>}></Route>
 
         </Routes>
       </BrowserRouter>
