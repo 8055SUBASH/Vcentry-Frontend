@@ -1,45 +1,44 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 
-import { useNavigate } from 'react-router-dom';
+const AdminLogin = ({ onLogin }) => {
 
-const AdminLogin = () => {
-    
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const navigate=useNavigate()
+    const handleLogin = () => {
+        // Perform authentication logic here (e.g., check username and password)
+        // For simplicity, this example always considers the login as successful.
+        //   const isLoggedIn = true;
 
-    const [errorForm, updateErrorForm] = useState({
-        username: false,
-        password: false
-    });
+        //   if (isLoggedIn) {
+        //     onLogin(username);
+        //     navigate('admin'); // Use navigate instead of history.push
+        //   } else {
+        //     alert('Invalid credentials. Please try again.');
+        //   }
 
-    const loginButton = () => {
-        updateErrorForm({
-            ...errorForm,
-            username: username === "" ? true : false,
-            password: password === "" ? true : false
-        });
 
-        if (
-            username === "" ||
-            password === ""
-        ) {
-            // Do not submit the form if any field is empty
-            return;
-        }
+        // ----------------------------Admin-ID and PASSWORD----------------------------
 
-        if (username === 'subash' && password === '1234') {
-            // Correct credentials, navigate to the next page
-            navigate('/application');
+        const correctUsername = 'user123';
+        const correctPassword = 'pass123';
+
+        if (username === correctUsername && password === correctPassword) {
+            onLogin(username);
+            navigate('/application'); // Use navigate instead of history.push
+
         } else {
-            // Incorrect credentials, display an error message
-            alert('Invalid username or password');
+            alert('Invalid credentials. Please try again.');
         }
+
+
     };
+
 
     return (
         <div>
@@ -57,7 +56,7 @@ const AdminLogin = () => {
                 {/* <!-- End Breadcrumbs --> */}
 
                 {/* <!-- ======= login  ======= --> */}
-                <section id="contact" className="contact ">
+                <section id="contact" className="contact">
                     <div className="container">
 
                         <div className="row">
@@ -72,20 +71,28 @@ const AdminLogin = () => {
                                         <div className="row">
                                             <div className="form-group mt-3">
                                                 <label>Enter Admin Name  :</label>
-                                                <input type="text" name="name" className="form-control" id="username" placeholder="Admin Name" required value={username} onChange={(e) => setUsername(e.target.value)}></input>
-                                                {errorForm.username && <span className='error-class'>Required*</span>}
+                                                <input type="text" className="form-control" placeholder="Admin Name" value={username}
+                                                    onChange={(e) => setUsername(e.target.value)} ></input>
                                             </div>
 
                                         </div>
                                         <div className="form-group mt-3">
                                             <label>Enter password        :</label>
-                                            <input type="password" className="form-control" name="password" id="password" placeholder="password" required value={password} onChange={(e) => setPassword(e.target.value)}></input>
-                                            {errorForm.password && <span className='error-class'>Required*</span>}
+                                            <input type="password" className="form-control" placeholder="password" value={password}
+                                                onChange={(e) => setPassword(e.target.value)}></input>
                                         </div>
 
+                                        {/* <div className="my-3">
+                                                <div className="loading">Loading</div>
+                                                <div className="error-message"></div>
+                                                <div className="sent-message">Your message has been sent. Thank you!</div>
+                                            </div> */}
+                                        <div className="two-btn">
 
-                                        <div className="text-center">
-                                            <button onClick={() => loginButton()} type="submit">Login</button>
+                                            <div className="text-center"><button onClick={handleLogin} type="submit">Login</button></div>
+
+                                            {/* <div className="msg-ivd">{false && <h6>Invalid AdminName or Password ...</h6>}</div> */}
+
                                         </div>
 
                                     </div>

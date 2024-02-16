@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 // pages
 
@@ -33,6 +33,15 @@ import ReviewForm from './pages/Review-Form';
 
 
 const App = () => {
+  //  ----------------------login-steps----------------------------------------------------------------------------
+
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
+
+  const handleLogin = (user) => {
+    setUsername(user);
+    setLoggedIn(true);
+  };
 
 
 
@@ -47,7 +56,30 @@ const App = () => {
           <Route path="skill" element={<SkillEnhancement></SkillEnhancement>}></Route>
           <Route path="review" element={<Review></Review>}></Route>
           <Route path="service" element={<Service></Service>}></Route>
-          <Route path="admin" element={<AdminLogin></AdminLogin>}></Route>
+
+          {/* ---------------------------Admin-Access ------------------------- */}
+          <Route
+            path="admin"
+            element={<AdminLogin onLogin={handleLogin} />}
+          />
+
+          <Route
+            path="application"
+            element={loggedIn ? <ApplicationForm username={username} /> : <Navigate to="admin" />}
+          />
+
+          <Route
+            path="/*"
+            element={<Navigate to="admin" />}
+          />
+
+          {/* ---------------------------Normal-Path------------------------- */}
+
+          {/* <Route path="admin" element={<AdminLogin></AdminLogin>}></Route>
+          <Route path="application" element={<ApplicationForm></ApplicationForm>}></Route> */}
+
+
+
           <Route path="details" element={<CoursesDetail></CoursesDetail>}></Route>
           <Route path="application" element={<ApplicationForm></ApplicationForm>}></Route>
           <Route path="reviewform" element={<ReviewForm></ReviewForm>}></Route>
