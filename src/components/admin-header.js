@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 const AdminHeader = () => {
     return (
@@ -15,7 +15,7 @@ const AdminHeader = () => {
                                 <NavLink to="/details" style={{ textDecoration: "none" }}>Course Details</NavLink>
                                 <NavLink to="/application" style={{ textDecoration: "none" }}>Contact Form</NavLink>
                                 <NavLink to="/reviewform" style={{ textDecoration: "none" }}>Review Form</NavLink>
-                                <button className='btn btn-success'>Log out</button>
+                                <button className='btn btn-success'><NavLink to="/*" style={{ textDecoration: "none" }}>Log out</NavLink></button>
                             </Nav>
 
                     </nav>
