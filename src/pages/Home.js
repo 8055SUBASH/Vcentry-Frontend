@@ -5,6 +5,7 @@ import axios from 'axios';
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 import CourseTrend from '../components/trend-courses-component';
+import { Link } from 'react-router-dom';
 
 
 
@@ -46,6 +47,21 @@ const Home = () => {
         )
     })
 
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 4000;
+
+    valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+                clearInterval(counter);
+            }
+        }, duration);
+    });
 
 
     return (
@@ -57,7 +73,9 @@ const Home = () => {
                 <div className="container position-relative aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                     <h1>Vcentry Technologies</h1>
                     <h2>Hands On Training Institute</h2>
-                    <button className="btn-get-started btn btn-outline-primary">Get Started</button>
+                    <Link to="/contact">
+                        <button className="btn-get-started btn btn-outline-primary"  ><strong>Contact Us  </strong> <i class="fa-solid fa-circle-arrow-right" style={{ color: "#ffffff", fontSize: "15px" }}></i></button>
+                    </Link>
                 </div>
             </section>
             {/* // <!-- End Hero --> */}
@@ -97,28 +115,32 @@ const Home = () => {
                 <section id="counts" className="counts section-bg">
                     <div className="container">
 
-                        <div className="row counters">
+                        <div className="numbers-box counters ">
 
-                            <div className="col-lg-3 col-6 text-center">
-                                <span className="purecounter">15+</span>
-                                <p>Years of Experience</p>
+                            <div >
+                                <div className="numbers-alignment">
+                                    <span className="purecounter" class="num" data-val="15">00</span><span>+</span>
+                                </div>
+                                    <p>Years of Experience</p>
                             </div>
-
-                            <div className="col-lg-3 col-6 text-center">
-                                <span className="purecounter">10k+</span>
-                                <p>Students Enrolled</p>
+                            <div >
+                                <div className="numbers-alignment">
+                                    <span className="purecounter" class="num" data-val="10">00</span><span>k+</span>
+                                </div>
+                                    <p>Students Enrolled</p>
                             </div>
-
-                            <div className="col-lg-3 col-6 text-center">
-                                <span className="purecounter">5k+</span>
-                                <p>Students Placed</p>
+                            <div >
+                                <div className="numbers-alignment">
+                                    <span className="purecounter" class="num" data-val="5">0</span><span>k+</span>
+                                </div>
+                                    <p>Students Placed</p>
                             </div>
-
-                            <div className="col-lg-3 col-6 text-center">
-                                <span className="purecounter">150+</span>
-                                <p>Real Time Projects</p>
+                            <div >
+                                <div className="numbers-alignment">
+                                    <span className="purecounter" class="num" data-val="150">000</span><span>+</span>
+                                </div>
+                                    <p>Real Time Projects</p>
                             </div>
-
                         </div>
 
                     </div>
@@ -238,10 +260,46 @@ const Home = () => {
                                 <div className="member">
                                     <img src={require("../img/trainers/trainer-1.jpg")} className="img-fluid" alt=""></img>
                                     <div className="member-content">
-                                        <h4>Walter White</h4>
-                                        <span>Web Development</span>
+                                        <h4>Karthick</h4>
+                                        <span>Fullstack Development</span>
                                         <p>
-                                            Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                                            Karthick is a seasoned full-stack developer with over 5 years of expertise, proficient in both front-end and back-end technologies. His comprehensive skill set and extensive experience contribute to delivering robust and efficient solutions across the entire web development stack.
+                                        </p>
+                                        <div className="social">
+                                            <a href=""><i className="bi bi-twitter"></i></a>
+                                            <a href=""><i className="bi bi-facebook"></i></a>
+                                            <a href=""><i className="bi bi-instagram"></i></a>
+                                            <a href=""><i className="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <div className="member">
+                                    <img src={require("../img/trainers/trainer-1.jpg")} className="img-fluid" alt=""></img>
+                                    <div className="member-content">
+                                        <h4>Karthick</h4>
+                                        <span>Fullstack Development</span>
+                                        <p>
+                                            Karthick is a seasoned full-stack developer with over 5 years of expertise, proficient in both front-end and back-end technologies. His comprehensive skill set and extensive experience contribute to delivering robust and efficient solutions across the entire web development stack.
+                                        </p>
+                                        <div className="social">
+                                            <a href=""><i className="bi bi-twitter"></i></a>
+                                            <a href=""><i className="bi bi-facebook"></i></a>
+                                            <a href=""><i className="bi bi-instagram"></i></a>
+                                            <a href=""><i className="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+                                <div className="member">
+                                    <img src={require("../img/trainers/trainer-1.jpg")} className="img-fluid" alt=""></img>
+                                    <div className="member-content">
+                                        <h4>Karthick</h4>
+                                        <span>Fullstack Development</span>
+                                        <p>
+                                            Karthick is a seasoned full-stack developer with over 5 years of expertise, proficient in both front-end and back-end technologies. His comprehensive skill set and extensive experience contribute to delivering robust and efficient solutions across the entire web development stack.
                                         </p>
                                         <div className="social">
                                             <a href=""><i className="bi bi-twitter"></i></a>
@@ -253,43 +311,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div className="member">
-                                    <img src={require("../img/trainers/trainer-2.jpg")} className="img-fluid" alt=""></img>
-                                    <div className="member-content">
-                                        <h4>Sarah Jhinson</h4>
-                                        <span>Marketing</span>
-                                        <p>
-                                            Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                                        </p>
-                                        <div className="social">
-                                            <a href=""><i className="bi bi-twitter"></i></a>
-                                            <a href=""><i className="bi bi-facebook"></i></a>
-                                            <a href=""><i className="bi bi-instagram"></i></a>
-                                            <a href=""><i className="bi bi-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                                <div className="member">
-                                    <img src={require("../img/trainers/trainer-3.jpg")} className="img-fluid" alt=""></img>
-                                    <div className="member-content">
-                                        <h4>William Anderson</h4>
-                                        <span>Content</span>
-                                        <p>
-                                            Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                                        </p>
-                                        <div className="social">
-                                            <a href=""><i className="bi bi-twitter"></i></a>
-                                            <a href=""><i className="bi bi-facebook"></i></a>
-                                            <a href=""><i className="bi bi-instagram"></i></a>
-                                            <a href=""><i className="bi bi-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
 

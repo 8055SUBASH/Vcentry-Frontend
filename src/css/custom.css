@@ -334,3 +334,12 @@
   object-fit: fill;
 
 }
+
+.numbers-alignment{
+  display: flex;
+}
+.numbers-box{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* --------------------------------------------------------------------------------------------------------------- */

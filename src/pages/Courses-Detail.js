@@ -4,7 +4,6 @@ import axios from 'axios';
 
 // ------------------------Components------------------------------------------
 
-import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 import AdminHeader from '../components/admin-header';
 
@@ -14,23 +13,12 @@ import AdminHeader from '../components/admin-header';
 
 const CoursesDetail = () => {
 
-    // const baseURL = "http://localhost:5000";
-
-    // ------------------------Components------------------------------------------
-
-    //  const context = useContext(DataSharing); 
-
-    //  context.dataExchange(detailRecord);
-
-
-    //-------------------Reloaded-------------------------------------------------
 
     useEffect(() => {
         loadDetails();
         loadTrend();
     }, []);
 
-    //-------------uploaded-courses-detail----------------------------------------
 
     const [uploadedCourses, updateUploadedCourses] = useState({
 
@@ -42,8 +30,6 @@ const CoursesDetail = () => {
     });
 
 
-    //-------------uploaded-courses-detail-error----------------------------------
-
     const [uploadedError, updateUploadedError] = useState({
 
         coursesFiled: false,
@@ -53,44 +39,41 @@ const CoursesDetail = () => {
 
     });
 
-    //-----------------------true/false-------------------------------------------
-
-    const [isLoading, updateIsLoading] = useState(true);
-
-
-    //-------------------------courses-record-------------------------------------
-
     const [detailRecord, updateDetailRecord] = useState([]);
 
 
-    //-----------------------trend-record-----------------------------------------
 
     const [trendRecord, updateTrendRecord] = useState([]);
 
-
-    //-------------input-onchange-------------------------------------------------
 
     const getInput = (event) => {
         updateUploadedCourses({ ...uploadedCourses, [event.target.id]: event.target.value });
     }
 
 
-    // -------------------- courses-detail----------------------------------------
-
-
 
     const uploadDetail = () => {
         console.log(uploadedCourses);
-        updateIsLoading(false);
+        ;
 
         updateUploadedError({
             ...uploadedError,
 
-            coursesFiled: uploadedCourses.coursesFiled == "" ? true : false,
-            coursesName: uploadedCourses.coursesName == "" ? true : false,
-            coursesDetail: uploadedCourses.coursesDetail == "" ? true : false,
-            coursesImage: uploadedCourses.coursesImage == "" ? true : false
+            coursesFiled: uploadedCourses.coursesFiled === "" ? true : false,
+            coursesName: uploadedCourses.coursesName === "" ? true : false,
+            coursesDetail: uploadedCourses.coursesDetail === "" ? true : false,
+            coursesImage: uploadedCourses.coursesImage === "" ? true : false
         });
+
+        if (
+            uploadedCourses.coursesName === "" ||
+            uploadedCourses.coursesFiled === "" ||
+            uploadedCourses.coursesDetail === "" ||
+            uploadedCourses.coursesImage === ""
+        ) {
+            // Do not submit the form if any field is empty
+            return;
+        }
 
 
         // ----------API--------------------------------------------
@@ -100,11 +83,11 @@ const CoursesDetail = () => {
         axios.post(url, uploadedCourses)
             .then((response) => {
                 alert(response.data);
-                updateIsLoading(true);
+                
             })
             .catch((error) => {
                 console.error(error)
-                updateIsLoading(true);
+                
             })
 
     }
@@ -116,16 +99,26 @@ const CoursesDetail = () => {
 
     const trendDetail = () => {
         console.log(uploadedCourses);
-        updateIsLoading(false);
+        ;
 
         updateUploadedError({
             ...uploadedError,
 
-            coursesFiled: uploadedCourses.coursesFiled == "" ? true : false,
-            coursesName: uploadedCourses.coursesName == "" ? true : false,
-            coursesDetail: uploadedCourses.coursesDetail == "" ? true : false,
-            coursesImage: uploadedCourses.coursesImage == "" ? true : false
+            coursesFiled: uploadedCourses.coursesFiled === "" ? true : false,
+            coursesName: uploadedCourses.coursesName === "" ? true : false,
+            coursesDetail: uploadedCourses.coursesDetail === "" ? true : false,
+            coursesImage: uploadedCourses.coursesImage === "" ? true : false
         });
+
+        if (
+            uploadedCourses.coursesName === "" ||
+            uploadedCourses.coursesFiled === "" ||
+            uploadedCourses.coursesDetail === "" ||
+            uploadedCourses.coursesImage === ""
+        ) {
+            // Do not submit the form if any field is empty
+            return;
+        }
 
 
         // ----------API--------------------------------------------
@@ -135,11 +128,11 @@ const CoursesDetail = () => {
         axios.post(url, uploadedCourses)
             .then((response) => {
                 alert(response.data);
-                updateIsLoading(true);
+                
             })
             .catch((error) => {
                 console.error(error)
-                updateIsLoading(true);
+                
             })
 
     }
@@ -226,7 +219,7 @@ const CoursesDetail = () => {
                 <td>{value.coursesName}</td>
                 <td>{value.coursesDetail}</td>
                 <td>
-                    <img src={value.coursesImage} width="70" />
+                    <img src={value.coursesImage} width="70" alt='Course Image' />
                 </td>
                 <td><button className="btn btn-outline-danger" onClick={() => deleteCouses(value.id)}>Delete</button></td>
             </tr>
@@ -300,7 +293,7 @@ const CoursesDetail = () => {
                                             <div className="form-group mt-3">
                                                 <label>Enter Course Filed :</label>
                                                 <input type="text" name="filed" className="form-control" id="coursesFiled" placeholder="Enter Course Filed" onChange={getInput} ></input>
-                                                {uploadedError.coursesFiled && <div className="rq-msg">Required</div>}
+                                                {uploadedError.coursesFiled && <div className="rq-msg">Required*</div>}
                                             </div>
 
                                         </div>
@@ -309,7 +302,7 @@ const CoursesDetail = () => {
                                             <div className="form-group mt-3">
                                                 <label>Enter Course Name :</label>
                                                 <input type="text" name="name" className="form-control" id="coursesName" placeholder="Enter Course Name" onChange={getInput} ></input>
-                                                {uploadedError.coursesName && <div className="rq-msg">Required</div>}
+                                                {uploadedError.coursesName && <div className="rq-msg">Required*</div>}
 
                                             </div>
 
@@ -319,7 +312,7 @@ const CoursesDetail = () => {
                                             <div className="form-group mt-3">
                                                 <label>Enter Course Detail :</label>
                                                 <textarea className="form-control" name="Detail" rows="5" id="coursesDetail" placeholder="Detail" onChange={getInput} ></textarea>
-                                                {uploadedError.coursesDetail && <div className="rq-msg">Required</div>}
+                                                {uploadedError.coursesDetail && <div className="rq-msg">Required*</div>}
 
                                             </div>
 
@@ -329,7 +322,7 @@ const CoursesDetail = () => {
                                             <div className="form-group mt-3">
                                                 <label>Enter Course Image :</label>
                                                 <input type="file" accept=".png, .jpeg, .jpg" className="form-control" id="coursesImage" placeholder="Enter Course ImageS" onChange={getImage}></input>
-                                                {uploadedError.coursesImage && <div className="rq-msg">Required</div>}
+                                                {uploadedError.coursesImage && <div className="rq-msg">Required*</div>}
 
                                             </div>
 
@@ -346,9 +339,9 @@ const CoursesDetail = () => {
 
                                         <div className="two-btn">
 
-                                            <div className="trend"><button type="submit" onClick={() => uploadDetail()}>{isLoading ? "Upload Course Detail" : "Loading"}</button></div>
+                                            <div className="trend"><button type="submit" onClick={() => uploadDetail()}>Upload Course Detail </button></div>
 
-                                            <div className="trend"><button type="submit" onClick={() => trendDetail()}>{isLoading ? "Trending Courses" : "Loading"}</button></div>
+                                            <div className="trend"><button type="submit" onClick={() => trendDetail()}>Update Trending Courses</button></div>
 
 
                                             {/* <div className="msg">{isLoading && <h6>Next Details To Upload ...</h6>}</div> */}

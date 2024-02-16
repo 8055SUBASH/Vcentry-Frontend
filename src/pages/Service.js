@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
+import { Link } from 'react-router-dom';
 
 const Service = () => {
     return (
@@ -76,7 +77,7 @@ const Service = () => {
                                         Choose Vcentry Technology for skill enhancement, where we merge theory with real-world application, guided by seasoned industry professionals. Our approach ensures you learn best practices and gain practical insights, fostering a dynamic and enriching learning experience tailored to the demands of the industry. Elevate your skills with us, gaining the confidence and expertise to thrive in the competitive professional landscape.
                                     </p>
                                     <div className="text-center">
-                                        <button className="more-btn btn bt-outline-light">Learn More <i className="bx bx-chevron-right"></i></button>
+                                        <Link to="/skill"><button className="more-btn btn bt-outline-light">Learn More <i className="bx bx-chevron-right"></i></button></Link>
                                     </div>
                                 </div>
                             </div>
