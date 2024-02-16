@@ -65,24 +65,24 @@ const App = () => {
 
           <Route
             path="application"
-            element={loggedIn ? <ApplicationForm username={username} /> : <Navigate to="admin" />}
+            element={loggedIn ? <ApplicationForm username={username} /> : <Navigate to="/admin" />}
           />
+
+
+          {/* --------------------------------------Branch-Pages---------------------------------------------------- */}
+          <Route
+            path="details"
+            element={loggedIn ? <CoursesDetail /> : <Navigate to="/admin" />} />
 
           <Route
+            path="reviewform"
+            element={loggedIn ? <ReviewForm /> : <Navigate to="/admin" />} />
+
+            {/* ---------------------------------------url-Access---------------------------------------------------- */}
+          <Route
             path="/*"
-            element={<Navigate to="admin" />}
+            element={<Navigate to="/admin" />}
           />
-
-          {/* ---------------------------Normal-Path------------------------- */}
-
-          {/* <Route path="admin" element={<AdminLogin></AdminLogin>}></Route>
-          <Route path="application" element={<ApplicationForm></ApplicationForm>}></Route> */}
-
-
-
-          <Route path="details" element={<CoursesDetail></CoursesDetail>}></Route>
-          <Route path="application" element={<ApplicationForm></ApplicationForm>}></Route>
-          <Route path="reviewform" element={<ReviewForm></ReviewForm>}></Route>
 
         </Routes>
       </BrowserRouter>
