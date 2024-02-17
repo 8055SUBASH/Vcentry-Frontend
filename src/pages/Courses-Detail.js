@@ -221,7 +221,7 @@ const CoursesDetail = () => {
                 <td>{value.coursesName}</td>
                 <td>{value.coursesDetail}</td>
                 <td>
-                    <img src={value.coursesImage} width="70" alt='Course Image' />
+                    <img src={value.coursesImage} width="70" alt='Course' />
                 </td>
                 <td><button className="btn btn-outline-danger" onClick={() => deleteCouses(value.id)}>Delete</button></td>
             </tr>
@@ -254,7 +254,7 @@ const CoursesDetail = () => {
                 <td>{value.coursesName}</td>
                 <td>{value.coursesDetail}</td>
                 <td>
-                    <img src={value.coursesImage} width="50" />
+                    <img src={value.coursesImage} width="50" alt='Trending Course'/>
                 </td>
                 <td><button className="btn btn-outline-danger " onClick={() => deleteTrend(value.id)}>Delete</button></td>
 
@@ -323,7 +323,7 @@ const CoursesDetail = () => {
                                         <div className="row">
                                             <div className="form-group mt-3">
                                                 <label>Enter Course Image :</label>
-                                                <input type="file" accept=".png, .jpeg, .jpg" className="form-control" id="coursesImage" placeholder="Enter Course ImageS" onChange={getImage}></input>
+                                                <input type="file" accept=".png, .jpeg, .jpg" className="form-control" id="coursesImage" placeholder="Enter Course Image's" onChange={getImage}></input>
                                                 {uploadedError.coursesImage && <div className="rq-msg">Required*</div>}
 
                                             </div>
