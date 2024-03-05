@@ -20,7 +20,6 @@ const CourseTrend = (props) => {
                     <p>{props.info.coursesDetail}</p>
                     <div className="trainer d-flex justify-content-between align-items-center">
                         <div className="trainer-rank d-flex align-items-center">
-                            {/* <i className="bx bx-heart"></i>&nbsp;65 */}
                         </div>
                     </div>
                 </div>

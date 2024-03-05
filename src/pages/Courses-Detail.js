@@ -1,5 +1,4 @@
 import React, { useState, useEffect, } from 'react';
-// useContext
 import axios from 'axios';
 
 // ------------------------Components------------------------------------------
@@ -9,7 +8,6 @@ import AdminHeader from '../components/admin-header';
 
 // ------------------------Components------------------------------------------
 
-// import DataSharing from '../context-api';
 
 const CoursesDetail = () => {
 
@@ -38,23 +36,26 @@ const CoursesDetail = () => {
         coursesImage: false
 
     });
-
+    // ----------------get-courses------------------
     const [detailRecord, updateDetailRecord] = useState([]);
 
-
+    // ----------------get-courses-trend-----------------
 
     const [trendRecord, updateTrendRecord] = useState([]);
 
+    // ----------------onchange------------------
 
     const getInput = (event) => {
         updateUploadedCourses({ ...uploadedCourses, [event.target.id]: event.target.value });
     }
-
-
+    
+    
+    // ----------------onclick------------------
 
     const uploadDetail = () => {
         console.log(uploadedCourses);
         ;
+        // ----------------error------------------
 
         updateUploadedError({
             ...uploadedError,
@@ -84,16 +85,14 @@ const CoursesDetail = () => {
             .then((response) => {
                 alert(response.data);
                 loadDetails();
-                
+
             })
             .catch((error) => {
                 console.error(error)
-                
+
             })
 
     }
-
-
 
     // ---------------------trend-courses-----------------------------------------
 
@@ -130,11 +129,11 @@ const CoursesDetail = () => {
             .then((response) => {
                 alert(response.data);
                 loadTrend();
-                
+
             })
             .catch((error) => {
                 console.error(error)
-                
+
             })
 
     }
@@ -216,7 +215,7 @@ const CoursesDetail = () => {
 
     const List = detailRecord.map((value, index) => {
         return (
-            <tr  key={index}>
+            <tr key={index}>
                 <td>{value.coursesFiled}</td>
                 <td>{value.coursesName}</td>
                 <td>{value.coursesDetail}</td>
@@ -254,7 +253,7 @@ const CoursesDetail = () => {
                 <td>{value.coursesName}</td>
                 <td>{value.coursesDetail}</td>
                 <td>
-                    <img src={value.coursesImage} width="50" alt='Trending Course'/>
+                    <img src={value.coursesImage} width="50" alt='Trending Course' />
                 </td>
                 <td><button className="btn btn-outline-danger " onClick={() => deleteTrend(value.id)}>Delete</button></td>
 
@@ -333,21 +332,13 @@ const CoursesDetail = () => {
 
 
 
-                                        {/* <div className="my-3">
-                                            <div className="loading">Loading</div>
-                                            <div className="error-message"></div>
-                                            <div className="sent-message">Your message has been sent. Thank you!</div>
-                                        </div> */}
+                                        
 
                                         <div className="two-btn">
 
                                             <div className="trend"><button type="submit" onClick={() => uploadDetail()}>Upload Course Detail </button></div>
 
                                             <div className="trend"><button type="submit" onClick={() => trendDetail()}>Update Trending Courses</button></div>
-
-
-                                            {/* <div className="msg">{isLoading && <h6>Next Details To Upload ...</h6>}</div> */}
-
 
                                         </div>
 

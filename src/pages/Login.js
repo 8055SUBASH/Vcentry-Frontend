@@ -11,18 +11,7 @@ const AdminLogin = ({ onLogin }) => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        // Perform authentication logic here (e.g., check username and password)
-        // For simplicity, this example always considers the login as successful.
-        //   const isLoggedIn = true;
-
-        //   if (isLoggedIn) {
-        //     onLogin(username);
-        //     navigate('admin'); // Use navigate instead of history.push
-        //   } else {
-        //     alert('Invalid credentials. Please try again.');
-        //   }
-
-
+       
         // ----------------------------Admin-ID and PASSWORD----------------------------
 
         const correctUsername = 'user123';
@@ -82,16 +71,10 @@ const AdminLogin = ({ onLogin }) => {
                                                 onChange={(e) => setPassword(e.target.value)}></input>
                                         </div>
 
-                                        {/* <div className="my-3">
-                                                <div className="loading">Loading</div>
-                                                <div className="error-message"></div>
-                                                <div className="sent-message">Your message has been sent. Thank you!</div>
-                                            </div> */}
                                         <div className="two-btn">
 
                                             <div className="text-center"><button onClick={handleLogin} type="submit">Login</button></div>
 
-                                            {/* <div className="msg-ivd">{false && <h6>Invalid AdminName or Password ...</h6>}</div> */}
 
                                         </div>
 

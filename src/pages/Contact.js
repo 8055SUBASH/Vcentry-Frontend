@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
@@ -57,7 +57,7 @@ const Contact = () => {
             .then((response) => {
                 console.log(storeInput);
                 console.log(response);
-                alert("Course Request Mail has been Sent");
+                alert("Course Request has been Sent");
     
             })
             .catch((error) => {
@@ -151,7 +151,7 @@ const Contact = () => {
 
                 </section>
                 <div >
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31098.602336953376!2d80.204074116333!3d13.014945247817298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f033b9b33f%3A0x3223d8a79e8a981f!2sVCENTRY!5e0!3m2!1sen!2sin!4v1707564318311!5m2!1sen!2sin" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31098.602336953376!2d80.204074116333!3d13.014945247817298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f033b9b33f%3A0x3223d8a79e8a981f!2sVCENTRY!5e0!3m2!1sen!2sin!4v1707564318311!5m2!1sen!2sin" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 {/* <!-- End Contact Section --> */}
             </main><br></br>

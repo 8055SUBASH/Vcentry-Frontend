@@ -2,28 +2,20 @@ import React, {useState, useEffect} from 'react';
 
 import axios from 'axios';
 
-// useContext,
+
 
 import HeaderComponent from '../components/header';
 import FooterComponent from '../components/footer';
 import CourseComponent from '../components/course-component';
 
 
-// import DataSharing from '../context-api';
+
 
 
 
 
 const Courses = () => {
 
-
-    // const context = useContext(DataSharing);
-
-    // const detailsList = context.coursesList.map((value, index) =>{
-    //     return(
-    //         <CourseComponent key={index} info={value}></CourseComponent>
-    //     )
-    // })
 
     // -------------------------------------USE-EFFECT-----------------------------------------------------------------------------------
     useEffect(() =>{
@@ -42,7 +34,7 @@ const Courses = () => {
         axios.get(url)
         .then((response) => {
             updateDetailRecord(response.data);
-            // context.dataExchange(response.data); //DATASHARING
+            
         })
         .catch((error) => {
             console.log(error); 

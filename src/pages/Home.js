@@ -28,7 +28,6 @@ const Home = () => {
         axios.get(url)
             .then((response) => {
                 updateTrendRecord(response.data);
-                // context.dataExchange(response.data); //DATASHARING
             })
             .catch((error) => {
                 console.log(error);
@@ -57,7 +56,7 @@ const Home = () => {
         let counter = setInterval(function () {
             startValue += 1;
             valueDisplay.textContent = startValue;
-            if (startValue == endValue) {
+            if (startValue === endValue) {
                 clearInterval(counter);
             }
         }, duration);
