@@ -52,7 +52,7 @@ const Contact = () => {
             return;
         }
 
-        const url = "http://localhost:5000/api/create/contact"; // Correct endpoint path
+        const url = "http://localhost:8080/api/create/contact"; // Correct endpoint path
         axios.post(url, storeInput)
             .then((response) => {
                 console.log(storeInput);

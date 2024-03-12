@@ -29,7 +29,7 @@ const Courses = () => {
 
     const loadDetails = () => {
 
-        const url ="http://localhost:5000/api/list/courses";
+        const url ="http://localhost:8080/api/list/courses";
 
         axios.get(url)
         .then((response) => {

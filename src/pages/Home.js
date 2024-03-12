@@ -23,7 +23,7 @@ const Home = () => {
 
     const loadTrend = () => {
 
-        const url = "http://localhost:5000/api/list/trend";
+        const url = "http://localhost:8080/api/list/trend";
 
         axios.get(url)
             .then((response) => {
